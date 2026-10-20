@@ -139,6 +139,13 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 .instruments__list--two { grid-template-columns: repeat(2, 1fr); max-width: 900px; }
 .instruments figure { margin: 0 0 20px; }
 .instruments figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+/* Fade the studio floor's edges into the band so no photo reads as a rectangle */
+.instruments figure img {
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent), linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, #000 72%, transparent), linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-composite: intersect;
+}
 .instruments h3 { margin: 0 0 6px; font-size: 1.25rem; font-weight: 500; }
 .instruments p { margin: 0; color: var(--on-black-2); max-width: 30em; }
 .instruments a { color: var(--on-black); }
@@ -267,6 +274,12 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
   .table__who { display: none; }
 }
 @media (min-width: 1101px) { .menu-mobile { display: none; } }
+/* Shorter desktops: a compact visit card keeps clear of the face in the photo */
+@media (min-width: 761px) and (max-width: 1400px) {
+  .visit { padding: 20px 24px 20px; }
+  .visit__list a { padding: 10px 0; }
+  .visit__note { display: none; }
+}
 
 /* ---------- Mobile ---------- */
 @media (max-width: 760px) {
