@@ -117,6 +117,8 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 /* The photo fills the column instead of setting the hero height, so the hero keeps its min-height */
 .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; } /* face above the visit card */
 .visit { position: absolute; left: calc(43% + 40px); bottom: 40px; z-index: 2; width: 420px; padding: 28px 28px 22px; background: var(--white); border-radius: var(--radius); box-shadow: 0 30px 60px rgba(11, 13, 12, .18), 0 2px 6px rgba(11, 13, 12, .08); }
+/* The card's bottom-left corner runs parallel to the photo's large corner: same centre, radius less the 40px inset */
+.visit { --visit-inset: 40px; border-bottom-left-radius: max(var(--radius), calc(var(--radius-lg) - var(--visit-inset))); }
 .visit__title { margin: 0 0 8px; font-size: 1.375rem; font-weight: 500; letter-spacing: -.01em; }
 .visit__list { margin: 0 0 20px; padding: 0; list-style: none; border-top: 2px solid var(--ink); }
 .visit__list a { display: flex; justify-content: space-between; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
@@ -323,7 +325,7 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
   .nav, .top__phone { display: none; }
   .nav-toggle { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 999px; background: none; font: 600 .9375rem "Archivo", sans-serif; cursor: pointer; }
   .top__book { margin-left: auto; }
-  .visit { left: auto; right: var(--gutter); }
+  .visit { left: auto; right: var(--gutter); border-bottom-left-radius: var(--radius); }
   .table a { grid-template-columns: minmax(0, 1fr) 150px 24px; }
   .table__who { display: none; }
   .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
