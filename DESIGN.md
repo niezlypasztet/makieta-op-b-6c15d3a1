@@ -99,7 +99,9 @@ typography:
     fontVariation: "\"wdth\" 75"
 rounded:
   none: "0"
-  hairline: "2px"
+  soft: "20px"
+  large: "clamp(48px, 7vw, 112px)"
+  pill: "999px"
   full: "50%"
 spacing:
   xs: "8px"
@@ -118,7 +120,7 @@ components:
   button-book:
     backgroundColor: "{colors.book}"
     textColor: "{colors.white}"
-    rounded: "{rounded.hairline}"
+    rounded: "{rounded.pill}"
     padding: "0 26px"
     height: "52px"
   button-book-hover:
@@ -127,13 +129,13 @@ components:
   button-book-header:
     backgroundColor: "{colors.book}"
     textColor: "{colors.white}"
-    rounded: "{rounded.hairline}"
+    rounded: "{rounded.pill}"
     padding: "0 26px"
     height: "44px"
   nav-toggle:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    rounded: "{rounded.hairline}"
+    rounded: "{rounded.pill}"
     padding: "0 18px"
     height: "44px"
   header:
@@ -143,13 +145,13 @@ components:
   nav-panel:
     backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
+    rounded: "{rounded.soft}"
     padding: "8px 24px"
     width: "380px"
   visit-card:
     backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
+    rounded: "{rounded.soft}"
     padding: "28px 28px 22px"
     width: "420px"
   price-row:
@@ -180,12 +182,22 @@ components:
   float-call:
     backgroundColor: "{colors.ink}"
     textColor: "{colors.white}"
-    rounded: "{rounded.full}"
+    rounded: "{rounded.pill}"
     size: "56px"
+  service-tile:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.on-black}"
+    rounded: "{rounded.none}"
+    padding: "22px 24px"
+  service-tile-label-on-photo:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    padding: "8px 16px"
   photo-badge:
     backgroundColor: "rgba(11, 13, 12, .62)"
     textColor: "{colors.white}"
-    rounded: "{rounded.none}"
+    rounded: "{rounded.pill}"
     padding: "2px 8px"
 ---
 
@@ -209,7 +221,7 @@ The world refuses rounded-blob pastel clinic templates and the navy-and-gold pal
 - Light weights (200 to 300) at display sizes, 600 only at label and action sizes.
 - Black bands for instruments, closing calls and footer; mist bands for quiet sections; white everywhere else.
 - Bottle green appears as a fill only on booking and call buttons.
-- Square corners everywhere except the 2px button corner and the circular floating phone.
+- Ortorad's shape language: pill buttons, soft 20px corners on cards and panels, and one large rounded corner on photos, dark bands and the service-tile grid.
 
 ## Colors
 
@@ -238,7 +250,7 @@ A near-monochrome ink-on-white palette with two blacks and one reserved green.
 
 **Display Font:** Archivo variable (weight 100 to 900, width 62 to 125%), fallback Arial
 **Body Font:** the same Archivo at normal width
-**Label Font:** the same Archivo at 75% width, uppercase
+**Label Font:** the same Archivo at 87.5% width, sentence case
 
 **Character:** one engineered grotesque stretched across its width axis does the work of a whole family: wide-open and light for statements, compressed and tight for labels and numerals, so the page reads like a calibrated instrument scale rather than a brochure.
 
@@ -255,14 +267,14 @@ A near-monochrome ink-on-white palette with two blacks and one reserved green.
 - **Body** (400, 18px, 1.6): reading text; paragraph measures are capped between 26em and 46em depending on the column.
 - **Body Small** (400, 16px): stage descriptions, colleague note, buttons. Notes and breadcrumbs drop to 14px, legal and visit-card note to 13px.
 - **Subhead** (600, 16px, 87.5% width, +0.02em): the small heading of related-link sections ("Zobacz też").
-- **Label** (600, 13px, 75% width, +0.09em, uppercase): navigation, definition-list terms, the "who" column, review attributions, mobile menu group names.
+- **Label** (500, 15px, 87.5% width, sentence case): definition-list terms, the "who" column, review attributions. Navigation is 500 at 16px. Only the mobile menu group names stay uppercase (13px, 75% width, +0.09em).
 
 ### Named Rules
 **The Light Large Rule.** The larger the type, the lighter the weight: 200 to 300 at 26px and above, 400 for reading, 500 to 600 only at 22px and below.
 
 **The Tabular Rule.** Every number that can be compared (prices, figures, stage numerals, dropdown prices) is set with tabular figures and aligned in its column.
 
-**The Width-Axis Rule.** Hierarchy at small sizes comes from width and case (75% uppercase), not from extra colour or size steps.
+**The Width-Axis Rule.** Hierarchy at small sizes comes from width and weight, not from extra colour or tracked capitals; the audience is often 40+, so small text stays at 15px or more and in sentence case.
 
 ## Layout
 
@@ -291,7 +303,7 @@ Flat by default. Depth comes from change of ground (white, mist, black) and from
 
 ## Shapes
 
-Square. Images, cards, panels, bands, previews and the badge have no radius. Buttons and the menu toggle carry a barely-there 2px corner that softens the edge without reading as round; the floating phone is the only full circle. Form is drawn with lines: a 2px ink rule opens the price table, visit list, ruled list and FAQ; a 1px ink rule opens stages, figures, facts and reviews; 1px hairlines divide rows and stage columns. Photographs are cropped 4:5 for people and instruments, 3:2 or 1:1 for detail splits, and as a 240 to 560px full-bleed strip. Instrument photos are masked to fade at the bottom (from 72%) and sides (10%) into the black band. Directional arrows, the dropdown chevron and the FAQ plus are line drawings at 1.5px stroke.
+Soft, after the client's reference ortorad.pl. Buttons, the menu toggle, the photo badge and the floating phone are pills. The visit card and the dropdown carry a 20px corner. Photographs, the strip, the dark bands (instruments, closing) and the service-tile grid share one shape: three 20px corners and one large corner (48 to 112px), alternating sides from block to block; the hero photo has only its large corner, where it meets the copy. Rows, tables, stages and tiles inside the grid stay square. Form is drawn with lines: a 2px ink rule opens the price table, visit list, ruled list and FAQ; a 1px ink rule opens stages, figures, facts and reviews; 1px hairlines divide rows and stage columns. Photographs are cropped 4:5 for people and instruments, 3:2 or 1:1 for detail splits, and as a 240 to 560px full-bleed strip. Instrument photos are masked to fade at the bottom (from 72%) and sides (10%) into the black band. Directional arrows, the dropdown chevron and the FAQ plus are line drawings at 1.5px stroke.
 
 ## Components
 
@@ -303,7 +315,7 @@ Quiet, rectangular and decisive; the green is the message.
 - **Text link action:** 600 weight underlined text beside the button ("lub zadzwoń"), turning green on hover. There is no outlined or ghost button besides the mobile menu toggle.
 
 ### Navigation
-- **Header:** sticky white bar, 76px (64px mobile), hairline bottom border; logo at 116px, uppercase Label-style links with 30px gaps, the main phone number in 600, then the green booking button.
+- **Header:** sticky white bar, 76px (64px mobile), hairline bottom border; logo at 116px, 16px sentence-case links (500) with 30px gaps, the main phone number in 600, then the green booking button.
 - **Dropdown:** triggers carry a drawn chevron that flips on open; hover and open states underline 2px at 8px offset. The panel is a 380px white sheet with hairline border and Panel drop, listing services as ruled rows with tabular prices in Measured Grey on the right. One panel open at a time; closes on outside click and Escape, returning focus.
 - **Mobile:** bordered "Menu" toggle opens a full-width sheet of ruled 18px links grouped under Label headings; closes on link choice or when the window widens.
 - **Breadcrumbs:** 14px Measured Grey, hairline slashes.
@@ -338,8 +350,14 @@ Salon Black band ending each subpage: On-Black Headline, a grey line beneath, th
 ### Footer
 Salon Black, the logo on a white plate, contact facts in two ruled columns with faint on-black hairlines, 13px legal line.
 
+### Service Tiles
+Ortorad's service grid: eight tiles, four across (two on tablet and phone), 8px gaps, the grid's top-left and bottom-right corners large. Photo tiles carry their label on a white pill; solid tiles (ink or mist; never green, which stays reserved for booking) carry a 44px line icon at the top and the label with a drawn arrow at the bottom. Each tile is a link to the service; hover scales the photo 4% or deepens the fill.
+
+### Glasses Types
+Złotno's glasses-type row, drawn as ruled columns rather than cards: five columns under a 1px ink rule, hairline dividers, a 48px line icon in bottle green, a 600 18px name and a 16px grey line. Icons are authored SVG at 1.75px stroke, one family across tiles and types.
+
 ### Floating Phone
-A 56px ink circle fixed 20px from the bottom-right corner on every page, with a 24px line-drawn handset and Button float. The one-tap call when the header button is hidden.
+A 56px ink circle fixed 20px from the bottom-right corner on every page, with a 24px line-drawn handset and Button float; above 1100px it widens into a pill that also shows the number, as on ortorad.pl. Hover turns it bottle green. The one-tap call when the header button is hidden.
 
 ### Photo Badge (mockup provenance)
 A square 12px label on a 62% Salon Black scrim, pinned 12px from the bottom-left of an illustrative photo ("zdjęcie poglądowe"; top-left in the mobile hero). It exists to mark placeholder imagery and leaves with it when real photography arrives.
@@ -349,13 +367,13 @@ A square 12px label on a 62% Salon Black scrim, pinned 12px from the bottom-left
 ### Do:
 - **Do** put lists of services, visit types, facts and questions in ruled rows under an ink top rule, with prices tabular and right-aligned.
 - **Do** keep Bottle Green as the only fill colour for actions, and use it for booking or calling only.
-- **Do** set display and figure type light (200 to 300) and large; use the 75% width uppercase Label for small structural text.
+- **Do** set display and figure type light (200 to 300) and large; use the 87.5% width Label in sentence case for small structural text.
 - **Do** place instrument and object photography on Studio Black with the edge-fade mask so no photo reads as a rectangle.
 - **Do** end every page with a clear call: closing band or contact block, plus the floating phone.
 - **Do** mark every illustrative or rights-unconfirmed photo with the photo badge or a band note until it is replaced.
 
 ### Don't:
-- **Don't** round corners beyond the 2px button corner (the floating phone circle is the one exception), and don't use pill buttons or organic blob shapes.
+- **Don't** invent new radii: pill, 20px soft corner and the one large corner are the whole vocabulary; no organic blob shapes.
 - **Don't** add a second accent colour or reintroduce navy and gold.
 - **Don't** put services in cards or tiles; the ruled table is the service pattern on every page.
 - **Don't** number anything that is not an ordered sequence; numerals belong to the Stages pattern only.
