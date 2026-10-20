@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Optyk Piotrkowska — okulista, badanie wzroku i salon optyczny, Łódź</title>
 <meta name="description" content="Gabinet okulistyczny i salon optyczny przy ul. Piotrkowskiej 172/180 w Łodzi. Badanie wzroku, diagnostyka jaskry GDx PRO, soczewki kontaktowe, szkła progresywne i oprawy premium.">
-<link rel="preload" href="fonts/familjen.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=c7323689">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=21de40d3">
 </head>
 <body>
 <a class="skip" href="#tresc">Przejdź do treści</a>
@@ -20,261 +20,260 @@
     <a class="top__logo" href="index.html"><img src="img/logo-optyk-piotrkowska.png" width="464" height="196" alt="Optyk Piotrkowska — strona główna"></a>
 
     <nav class="nav" aria-label="Główna">
-      <ul>
+      <ul class="nav__list">
         <li class="nav__group">
           <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="menu-badania">Badania</button>
-          <ul class="nav__panel" id="menu-badania" hidden>
-            <li><a href="#badanie">Badanie wzroku</a></li>
-            <li><a href="#uslugi">Wizyta u okulisty</a></li>
-            <li><a href="podstrona-jaskra.html">Diagnostyka jaskry</a></li>
-            <li><a href="podstrona-dzieci.html">Badanie wzroku dziecka</a></li>
-            <li><a href="#uslugi">Soczewki kontaktowe</a></li>
-          </ul>
+          <div class="nav__panel" id="menu-badania" hidden>
+            <ul>
+              <li><a href="#uslugi"><span>Badanie wzroku</span><span class="nav__price">100 zł</span></a></li>
+              <li><a href="#okulistka"><span>Wizyta okulistyczna</span><span class="nav__price">200 zł</span></a></li>
+              <li><a href="podstrona-jaskra.html"><span>Diagnostyka jaskry GDx PRO</span><span class="nav__price"><span class="tbd">[cena]</span></span></a></li>
+              <li><a href="#uslugi"><span>Dobór soczewek kontaktowych</span><span class="nav__price">200 zł</span></a></li>
+              <li><a href="podstrona-dzieci.html"><span>Konsultacja okulistyczna dzieci</span><span class="nav__price">200 zł</span></a></li>
+              <li><a href="#uslugi"><span>Badanie kierowców</span><span class="nav__price">180 zł</span></a></li>
+            </ul>
+          </div>
         </li>
         <li class="nav__group">
           <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="menu-okulary">Okulary</button>
-          <ul class="nav__panel" id="menu-okulary" hidden>
-            <li><a href="#okulary">Szkła progresywne</a></li>
-            <li><a href="#marki">Oprawy i marki</a></li>
-            <li><a href="marka-tree.html">TREE Spectacles</a></li>
-            <li><a href="podstrona-dzieci.html">Okulary dla dzieci</a></li>
-          </ul>
+          <div class="nav__panel" id="menu-okulary" hidden>
+            <ul>
+              <li><a href="#okulary"><span>Szkła progresywne</span></a></li>
+              <li><a href="#okulary"><span>Oprawy i marki</span></a></li>
+              <li><a href="marka-tree.html"><span>TREE Spectacles</span></a></li>
+              <li><a href="podstrona-dzieci.html"><span>Okulary dla dzieci</span></a></li>
+            </ul>
+          </div>
         </li>
-        <li><a href="#liczby">O nas</a></li>
-        <li><a href="#opinie">Opinie</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a class="nav__link" href="#okulistka">Zespół</a></li>
+        <li><a class="nav__link" href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
 
-    <a class="pill pill--dark top__book" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska">Umów wizytę</a>
-
+    <a class="top__phone" href="tel:+48426302830">42 630 28 30</a>
+    <a class="btn btn--book top__book" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska">Umów wizytę</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
   </div>
 
   <nav class="menu-mobile" id="menu-mobile" aria-label="Menu" hidden>
+    <p class="menu-mobile__h">Badania</p>
     <ul>
-      <li><a href="#badanie">Badanie wzroku</a></li>
-      <li><a href="#uslugi">Wizyta u okulisty</a></li>
-      <li><a href="podstrona-jaskra.html">Diagnostyka jaskry</a></li>
-      <li><a href="podstrona-dzieci.html">Badanie wzroku dziecka</a></li>
-      <li><a href="#uslugi">Soczewki kontaktowe</a></li>
+      <li><a href="#uslugi">Badanie wzroku</a></li>
+      <li><a href="#okulistka">Wizyta okulistyczna</a></li>
+      <li><a href="podstrona-jaskra.html">Diagnostyka jaskry GDx PRO</a></li>
+      <li><a href="#uslugi">Dobór soczewek kontaktowych</a></li>
+      <li><a href="podstrona-dzieci.html">Konsultacja okulistyczna dzieci</a></li>
+      <li><a href="#uslugi">Badanie kierowców</a></li>
+    </ul>
+    <p class="menu-mobile__h">Okulary</p>
+    <ul>
       <li><a href="#okulary">Szkła progresywne</a></li>
-      <li><a href="#marki">Oprawy i marki</a></li>
+      <li><a href="#okulary">Oprawy i marki</a></li>
       <li><a href="marka-tree.html">TREE Spectacles</a></li>
       <li><a href="podstrona-dzieci.html">Okulary dla dzieci</a></li>
-      <li><a href="#liczby">O nas</a></li>
-      <li><a href="#opinie">Opinie</a></li>
+    </ul>
+    <ul class="menu-mobile__plain">
+      <li><a href="#okulistka">Zespół</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
   </nav>
 </header>
 
 <main id="tresc">
-<!-- Hero: Ortorad's rounded panel and pill pair, Złotno's light headline beside a person in glasses -->
+<!-- First viewport: light headline left; person in glasses right (Złotno's solution) with the visit card over the photo -->
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero__panel">
-    <div class="hero__copy">
-      <h1 id="hero-title" class="display">Od badania <strong>do&nbsp;okularów</strong> w&nbsp;jednym miejscu</h1>
-      <p class="hero__lede">Gabinet okulistyczny i salon optyczny przy Piotrkowskiej 172/180 w&nbsp;Łodzi. Okulistka, optometrystka i&nbsp;oprawy premium pod jednym adresem.</p>
-      <div class="pills">
-        <a class="pill pill--dark" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">Umów wizytę u okulisty</a>
-        <a class="pill pill--light" href="tel:+48426302830">42 630 28 30</a>
+  <div class="hero__copy">
+    <h1 id="hero-title" class="display"><span class="line">Od badania</span> <span class="line">do&nbsp;okularów.</span></h1>
+    <p class="hero__lede">Gabinet okulistyczny i salon optyczny przy Piotrkowskiej 172/180 w&nbsp;Łodzi. Okulistka, optometrystka i&nbsp;oprawy kilkunastu marek pod jednym adresem.</p>
+    <p class="rating"><svg class="stars" viewBox="0 0 100 18" aria-hidden="true"><use href="#star" x="0" width="18" height="18"/><use href="#star" x="20" width="18" height="18"/><use href="#star" x="40" width="18" height="18"/><use href="#star" x="60" width="18" height="18"/><use href="#star" x="80" width="18" height="18"/></svg><span><strong>5,0</strong> · 223 opinie o naszej okulistce na ZnanyLekarz</span></p>
+  </div>
+
+  <div class="hero__media">
+    <img src="img/hero-osoba.webp" width="960" height="1200" alt="Kobieta w szylkretowych okularach w salonie optycznym">
+    <span class="badge">zdjęcie poglądowe</span>
+  </div>
+
+  <!-- Visit card: the working action of the first viewport -->
+  <aside class="visit" aria-labelledby="visit-title">
+    <h2 id="visit-title" class="visit__title">Umów wizytę</h2>
+    <ul class="visit__list">
+      <li><a href="tel:+48426302830"><span>Badanie wzroku</span><span class="visit__price">100 zł</span></a></li>
+      <li><a href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener"><span>Wizyta okulistyczna</span><span class="visit__price">200 zł</span></a></li>
+      <li><a href="podstrona-jaskra.html"><span>Diagnostyka jaskry GDx PRO</span><span class="visit__price"><span class="tbd">[cena]</span></span></a></li>
+      <li><a href="tel:+48426302830"><span>Dobór soczewek kontaktowych</span><span class="visit__price">200 zł</span></a></li>
+    </ul>
+    <a class="btn btn--book btn--wide" href="tel:+48426302830">Zadzwoń: 42 630 28 30</a>
+    <p class="visit__note">Okulistkę umówisz też przez <a href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">ZnanyLekarz</a>. Salon: pon.–pt. 10–18, sob. 10–14.</p>
+  </aside>
+</section>
+
+<!-- Services as one ruled price table; rows preview a photo under the pointer -->
+<section class="services wrap" id="uslugi" aria-labelledby="uslugi-title">
+  <div class="services__head">
+    <h2 id="uslugi-title" class="h2">Badania i&nbsp;usługi</h2>
+    <p>Ceny z cennika gabinetu. Na każde badanie zapisujemy telefonicznie, na wizytę u okulistki także przez ZnanyLekarz. <span class="tbd">[ceny do potwierdzenia]</span></p>
+  </div>
+  <ul class="table" data-peek-table>
+    <li><a href="#badanie" data-peek="img/obj-foropter.webp"><span class="table__name">Badanie wzroku</span><span class="table__who">optometrystka</span><span class="table__price">100 zł</span></a></li>
+    <li><a href="#okulistka" data-peek="img/poglad/okulistka.webp"><span class="table__name">Wizyta okulistyczna</span><span class="table__who">okulistka</span><span class="table__price">200 zł <small>sob. 250 zł</small></span></a></li>
+    <li><a href="podstrona-jaskra.html" data-peek="img/obj-skaner.webp"><span class="table__name">Diagnostyka jaskry GDx PRO</span><span class="table__who">okulistka</span><span class="table__price"><span class="tbd">[cena]</span></span></a></li>
+    <li><a href="tel:+48426302830" data-peek="img/poglad/optometrystka.webp"><span class="table__name">Dobór soczewek kontaktowych</span><span class="table__who">optometrystka</span><span class="table__price">200 zł</span></a></li>
+    <li><a href="podstrona-dzieci.html" data-peek="img/poglad/dzieci-badanie.webp"><span class="table__name">Konsultacja okulistyczna dzieci</span><span class="table__who">okulistka</span><span class="table__price">200 zł <small>sob. 250 zł</small></span></a></li>
+    <li><a href="tel:+48426302830" data-peek="img/obj-lampa.webp"><span class="table__name">Badanie kierowców</span><span class="table__who">gabinet</span><span class="table__price">180 zł</span></a></li>
+    <li><a href="tel:+48426302830" data-peek="img/obj-lampa.webp"><span class="table__name">Badanie okresowe okulistyczne do pracy</span><span class="table__who">gabinet</span><span class="table__price">180 zł</span></a></li>
+  </ul>
+</section>
+
+<!-- Instruments photographed like objects, on black -->
+<section class="instruments" aria-labelledby="sprzet-title">
+  <div class="wrap">
+    <h2 id="sprzet-title" class="h2 h2--light">Sprzęt, na którym badamy</h2>
+    <ul class="instruments__list">
+      <li>
+        <figure><img src="img/obj-foropter.webp" width="900" height="1125" loading="lazy" alt="Foropter na czarnym tle"></figure>
+        <h3>Foropter</h3>
+        <p>Porównujesz szkła jedno po drugim, aż obraz jest ostry i wygodny dla obu oczu.</p>
+      </li>
+      <li>
+        <figure><img src="img/obj-lampa.webp" width="900" height="1125" loading="lazy" alt="Lampa szczelinowa z wąską wiązką światła"></figure>
+        <h3>Lampa szczelinowa</h3>
+        <p>Ocena przedniego i tylnego odcinka oka, w tym badanie dna oka.</p>
+      </li>
+      <li>
+        <figure><img src="img/obj-skaner.webp" width="900" height="1125" loading="lazy" alt="Aparat do laserowego badania siatkówki"></figure>
+        <h3>GDx PRO</h3>
+        <p>Laserowa ocena włókien nerwowych siatkówki. Około 10 minut, bez kropli. <a href="podstrona-jaskra.html">O badaniu</a></p>
+      </li>
+    </ul>
+    <p class="instruments__note">Zdjęcia poglądowe, wygenerowane. Docelowo sesja sprzętu w gabinecie.</p>
+  </div>
+</section>
+
+<!-- The exam as stages (Złotno's solution), numbered because order matters -->
+<section class="stages wrap" id="badanie" aria-labelledby="badanie-title">
+  <div class="stages__head">
+    <h2 id="badanie-title" class="h2">Jak wygląda badanie wzroku</h2>
+    <p>Prowadzi je optometrystka. Okulary dobieramy dopiero wtedy, gdy wiemy, co dzieje się z okiem. Wizyta u okulistki i diagnostyka jaskry to osobne wizyty.</p>
+  </div>
+  <ol class="stages__list">
+    <li><span class="stages__no" aria-hidden="true">1</span><h3>Rozmowa</h3><p>Jak pracujesz, ile czasu spędzasz przy ekranie, co Ci przeszkadza w obecnych okularach.</p></li>
+    <li><span class="stages__no" aria-hidden="true">2</span><h3>Pomiar komputerowy</h3><p>Autorefraktometr mierzy wadę w kilka sekund. To punkt wyjścia, nie gotowa recepta.</p></li>
+    <li><span class="stages__no" aria-hidden="true">3</span><h3>Dal i bliż</h3><p>Foropter, kaseta szkieł próbnych i tablica: porównujesz szkła, aż obraz jest ostry.</p></li>
+    <li><span class="stages__no" aria-hidden="true">4</span><h3>Przednia część oka</h3><p>Lampa szczelinowa. Jeśli coś budzi wątpliwości, proponujemy wizytę u okulistki.</p></li>
+    <li><span class="stages__no" aria-hidden="true">5</span><h3>Szkła i oprawa</h3><p>Dobieramy rodzaj szkieł do Twojego dnia, potem oprawę, która na nie pasuje.</p></li>
+  </ol>
+  <p class="stages__foot"><strong>100 zł</strong> · soczewki kontaktowe zdejmij co najmniej godzinę przed badaniem · <a href="tel:+48426302830">umów: 42 630 28 30</a></p>
+</section>
+
+<!-- The doctor, with the real review figures (Ortorad's numbers solution) -->
+<section class="doctor" id="okulistka" aria-labelledby="okulistka-title">
+  <div class="wrap doctor__grid">
+    <figure class="doctor__media">
+      <img src="img/poglad/okulistka.webp" width="1121" height="1402" loading="lazy" alt="Dłonie okulistki przy lampie szczelinowej">
+      <span class="badge">zdjęcie poglądowe</span>
+    </figure>
+    <div class="doctor__copy">
+      <h2 id="okulistka-title" class="h2">dr Monika Szczygłowska-Uramowska</h2>
+      <p class="doctor__role">okulistka · przyjmuje w gabinecie przy salonie, po wcześniejszym umówieniu</p>
+      <p>Badanie dna oka, pomiar ciśnienia w oku, recepta na okulary i soczewki, diagnostyka jaskry GDx PRO, konsultacje okulistyczne dzieci.</p>
+      <dl class="figures">
+        <div><dt>223</dt><dd>opinie na ZnanyLekarz</dd></div>
+        <div><dt>5,0</dt><dd>średnia ocen</dd></div>
+        <div><dt>200 zł</dt><dd>wizyta, w sobotę 250 zł</dd></div>
+      </dl>
+      <p class="doctor__hours">Gabinet przyjmuje: <span class="tbd">[dni i godziny]</span></p>
+      <div class="actions">
+        <a class="btn btn--book" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">Umów przez ZnanyLekarz</a>
+        <a class="link" href="tel:+48426302830">lub zadzwoń: 42 630 28 30</a>
+      </div>
+      <div class="colleague">
+        <img src="img/poglad/optometrystka.webp" width="1200" height="1200" loading="lazy" alt="Dłonie optometrystki przy foropterze">
+        <p><strong>Joanna Subdys</strong>, optometrystka. Bada wzrok, dobiera szkła i&nbsp;soczewki kontaktowe, uczy ich zakładania.</p>
       </div>
     </div>
-    <figure class="hero__media">
-      <img src="img/hero-osoba.webp" width="960" height="1200" alt="Uśmiechnięta kobieta w szylkretowych okularach w salonie optycznym">
+  </div>
+</section>
+
+<!-- Glasses: full-bleed strip, then progressive lenses and the brand list set large -->
+<section class="glasses" id="okulary" aria-labelledby="okulary-title">
+  <figure class="strip">
+    <img src="img/pas-dlonie.webp" width="1916" height="821" loading="lazy" alt="Dłonie trzymające okulary na tle półek z oprawami">
+    <span class="badge">zdjęcie poglądowe</span>
+  </figure>
+  <div class="wrap glasses__grid">
+    <div>
+      <h2 id="okulary-title" class="h2">Okulary i&nbsp;soczewki</h2>
+      <p>Szkła progresywne do patrzenia daleko, na ekran i do czytania w jednych okularach. Pomiary centrowania robimy w salonie, pierwsze dni noszenia omawiamy przy odbiorze. Jedyny w Łodzi salon partnerski Essilor Varilux <span class="tbd">[do potwierdzenia]</span>.</p>
+      <p>Soczewki kontaktowe systematycznej wymiany, także progresywne, zamawiamy w salonie.</p>
+      <a class="link" href="tel:+48426302830">Zapytaj o progresy: 42 630 28 30</a>
+    </div>
+    <div>
+      <ul class="brandlist">
+        <li><a href="marka-tree.html">TREE Spectacles</a></li>
+        <li>Carolina Herrera</li><li>BOSS</li><li>HUGO</li><li>Carrera</li><li>David Beckham</li><li>Love Moschino</li><li>Dolce&amp;Gabbana</li><li>Andy Wolf</li>
+        <li><a href="podstrona-dzieci.html">Karavan Kids</a></li>
+      </ul>
+      <p class="note">Oprawy tych marek są w salonie. Lista do potwierdzenia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews: real count, quotes still to be collected -->
+<section class="reviews wrap" aria-labelledby="opinie-title">
+  <h2 id="opinie-title" class="h2">Co piszą pacjenci</h2>
+  <div class="reviews__grid">
+    <blockquote><p><span class="tbd">[miejsce na opinię pacjenta z ZnanyLekarz]</span></p><footer>imię, data opinii</footer></blockquote>
+    <blockquote><p><span class="tbd">[miejsce na opinię pacjenta z ZnanyLekarz]</span></p><footer>imię, data opinii</footer></blockquote>
+  </div>
+  <a class="link" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">Wszystkie 223 opinie na ZnanyLekarz</a>
+</section>
+
+<!-- Contact: the address set large, hours and phones as a table, the gate photo -->
+<section class="contact" id="kontakt" aria-labelledby="kontakt-title">
+  <div class="wrap contact__grid">
+    <div>
+      <h2 id="kontakt-title" class="contact__address">Piotrkowska 172/180, lokal&nbsp;4U</h2>
+      <dl class="facts">
+        <div><dt>Salon</dt><dd>pon.–pt. 10:00–18:00, sob. 10:00–14:00</dd></div>
+        <div><dt>Okulistka</dt><dd><span class="tbd">[dni i godziny gabinetu]</span></dd></div>
+        <div><dt>Telefon</dt><dd><a href="tel:+48426302830">42 630 28 30</a> · <a href="tel:+48780063682">780 063 682</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:kontakt@optykpiotrkowska.pl">kontakt@optykpiotrkowska.pl</a></dd></div>
+        <div><dt>Dojazd</dt><dd><span class="tbd">[parking, przystanek, wejście bramą]</span></dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn btn--book" href="tel:+48426302830">Zadzwoń</a>
+        <a class="link" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">Umów okulistkę przez ZnanyLekarz</a>
+      </div>
+    </div>
+    <figure class="contact__media">
+      <img src="img/poglad/brama.webp" width="1200" height="900" loading="lazy" alt="Brama kamienicy z łukowym przejazdem">
       <span class="badge">zdjęcie poglądowe</span>
     </figure>
   </div>
-
-  <!-- Proof row (Ortorad's Google + 98% band), with the practice's real figures -->
-  <div class="proof">
-    <p class="proof__item"><span class="proof__stars" aria-hidden="true">★★★★★</span><span class="proof__big">5,0</span><span>średnia ocen okulistki na ZnanyLekarz</span></p>
-    <p class="proof__item"><span class="proof__big">223</span><span>opinie pacjentów (stan na 19.10.2026)</span></p>
-  </div>
 </section>
 
-<!-- Intro: Złotno's "Centrum Optyczne Złotno" text block, with a rounded photo -->
-<section class="intro wrap" aria-labelledby="intro-title">
-  <figure class="blob blob--left">
-    <img src="img/salon-wnetrze.webp" width="1200" height="800" loading="lazy" alt="Wnętrze salonu optycznego z półkami pełnymi opraw">
-    <span class="badge">zdjęcie poglądowe</span>
-  </figure>
-  <div class="intro__copy">
-    <h2 id="intro-title" class="h2">Optyk <strong>Piotrkowska</strong></h2>
-    <p>Salon optyczny z gabinetem okulistycznym w samym centrum Łodzi. Wzrok bada optometrystka, zdrowie oka ocenia okulistka, a okulary dobieramy dopiero wtedy, gdy wiemy, co dzieje się z okiem.</p>
-    <p>Na miejscu diagnostyka jaskry badaniem GDx PRO, dobór soczewek kontaktowych i szkieł progresywnych oraz oprawy kilkunastu marek.</p>
-  </div>
-</section>
-
-<!-- Services: Ortorad's tile grid (photo, dark and accent tiles) -->
-<section class="services" id="uslugi" aria-labelledby="uslugi-title">
-  <div class="wrap">
-    <h2 id="uslugi-title" class="h2 h2--center">Zapoznaj się <strong>z naszymi usługami</strong></h2>
-    <ul class="tiles">
-      <li class="tile tile--accent"><a href="#badanie"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg><span>Badanie wzroku</span><small>100 zł</small></a></li>
-      <li class="tile tile--photo"><a href="#kontakt"><img src="img/poglad/okulistka.webp" width="1121" height="1402" loading="lazy" alt=""><svg class="icon" aria-hidden="true"><use href="#i-doctor"/></svg><span>Wizyta u okulisty</span><small>200 zł, sob. 250 zł</small></a></li>
-      <li class="tile tile--dark"><a href="podstrona-jaskra.html"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg><span>Diagnostyka jaskry GDx PRO</span></a></li>
-      <li class="tile tile--photo"><a href="#kontakt"><img src="img/poglad/optometrystka.webp" width="1200" height="1200" loading="lazy" alt=""><svg class="icon" aria-hidden="true"><use href="#i-lens"/></svg><span>Dobór soczewek kontaktowych</span><small>200 zł</small></a></li>
-      <li class="tile tile--dark tile--round"><a href="#kontakt"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg><span>Badanie kierowców</span><small>180 zł</small></a></li>
-      <li class="tile tile--dark tile--round-bl"><a href="#kontakt"><svg class="icon" aria-hidden="true"><use href="#i-work"/></svg><span>Badanie okresowe do pracy</span><small>180 zł</small></a></li>
-      <li class="tile tile--photo"><a href="podstrona-dzieci.html"><img src="img/poglad/dzieci-badanie.webp" width="1121" height="1402" loading="lazy" alt=""><svg class="icon" aria-hidden="true"><use href="#i-child"/></svg><span>Konsultacja okulistyczna dzieci</span><small>200 zł, sob. 250 zł</small></a></li>
-      <li class="tile tile--dark"><a href="#okulary"><svg class="icon" aria-hidden="true"><use href="#i-progressive"/></svg><span>Szkła progresywne</span></a></li>
-      <li class="tile tile--photo"><a href="#marki"><img src="img/poglad/oprawy-dzieci.webp" width="1200" height="800" loading="lazy" alt=""><svg class="icon" aria-hidden="true"><use href="#i-frames"/></svg><span>Oprawy i marki</span></a></li>
-      <li class="tile tile--accent"><a href="podstrona-dzieci.html"><svg class="icon" aria-hidden="true"><use href="#i-child"/></svg><span>Okulary dla dzieci</span></a></li>
-    </ul>
-    <p class="note">Ceny z cennika gabinetu na optykpiotrkowska.pl/gabinet. <span class="tbd">[do potwierdzenia przed publikacją]</span></p>
-  </div>
-</section>
-
-<!-- Full-bleed photo strip between sections (Złotno) -->
-<figure class="strip">
-  <img src="img/pas-dlonie.webp" width="1916" height="821" loading="lazy" alt="Dłonie trzymające okulary na tle półek z oprawami">
-  <span class="badge">zdjęcie poglądowe</span>
-</figure>
-
-<!-- The exam as stages, alternating sides with line icons (Złotno) -->
-<section class="stages wrap" id="badanie" aria-labelledby="badanie-title">
-  <div class="stages__head">
-    <h2 id="badanie-title" class="h2">Jak wygląda <strong>badanie wzroku</strong></h2>
-    <p>Badanie prowadzi optometrystka. Wizyta u okulistki i diagnostyka jaskry to osobne wizyty.</p>
-  </div>
-  <ol class="stages__list">
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-talk"/></svg><p class="stage__no">Etap I</p><h3 class="stage__title">Rozmowa</h3><p>Jak pracujesz, ile czasu spędzasz przy ekranie, co Ci przeszkadza w obecnych okularach.</p></li>
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-scan"/></svg><p class="stage__no">Etap II</p><h3 class="stage__title">Komputerowe badanie wzroku</h3><p>Autorefraktometr mierzy wadę w kilka sekund. To punkt wyjścia, nie gotowa recepta.</p></li>
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-chart"/></svg><p class="stage__no">Etap III</p><h3 class="stage__title">Ostrość do dali i do bliży</h3><p>Foropter, kaseta szkieł próbnych i tablica: porównujesz szkła, aż obraz jest ostry i wygodny.</p></li>
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-eye"/></svg><p class="stage__no">Etap IV</p><h3 class="stage__title">Ocena przedniej części oka</h3><p>Lampa szczelinowa. Jeśli coś budzi wątpliwości, proponujemy osobną wizytę u okulistki.</p></li>
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-frames"/></svg><p class="stage__no">Etap V</p><h3 class="stage__title">Szkła i oprawa</h3><p>Dobieramy rodzaj szkieł do Twojego dnia, potem oprawę, która na nie pasuje.</p></li>
-  </ol>
-  <p class="stages__fast">Badanie pod kątem doboru okularów: <strong>100 zł</strong>. Soczewki kontaktowe zdejmij co najmniej godzinę przed badaniem.</p>
-</section>
-
-<!-- Numbers with a rounded photo collage (Ortorad "My w liczbach"); figures are real -->
-<section class="numbers" id="liczby" aria-labelledby="liczby-title">
-  <div class="wrap numbers__grid">
-    <div>
-      <h2 id="liczby-title" class="h2">My <strong>w liczbach</strong></h2>
-      <dl class="counts">
-        <div><dt>223</dt><dd>opinie o naszej okulistce na ZnanyLekarz</dd></div>
-        <div><dt>5,0</dt><dd>średnia ocen</dd></div>
-        <div><dt>2</dt><dd>specjalistki: okulistka i optometrystka</dd></div>
-        <div><dt>10 min</dt><dd>trwa badanie GDx PRO</dd></div>
-      </dl>
-    </div>
-    <div class="collage">
-      <figure class="collage__a"><img src="img/poglad/okulistka.webp" width="1121" height="1402" loading="lazy" alt="Okulistka przy lampie szczelinowej"><span class="badge">zdjęcie poglądowe</span></figure>
-      <figure class="collage__b"><img src="img/poglad/gdx.webp" width="1121" height="1402" loading="lazy" alt="Aparat do badania siatkówki"></figure>
-      <figure class="collage__c"><img src="img/poglad/optometrystka.webp" width="1200" height="1200" loading="lazy" alt="Optometrystka przy foropterze"></figure>
-    </div>
-  </div>
-</section>
-
-<!-- Glasses: Złotno's outlined cards with line icons on a dark band -->
-<section class="band" id="okulary" aria-labelledby="okulary-title">
-  <div class="wrap">
-    <h2 id="okulary-title" class="h2 h2--center h2--light">Okulary <strong>i soczewki</strong></h2>
-    <ul class="cards">
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-progressive"/></svg><h3>Szkła progresywne</h3><p>Jedne okulary do patrzenia daleko, na ekran i do czytania. Jedyny w Łodzi salon partnerski Essilor Varilux <span class="tbd">[do potwierdzenia]</span>.</p><a class="more" href="#kontakt">Zapytaj o progresy</a></li>
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-work"/></svg><h3>Okulary do pracy przy ekranie</h3><p>Dla osób, które wiele godzin patrzą na monitor. Dobór po badaniu wzroku.</p><a class="more" href="#badanie">Jak wygląda badanie</a></li>
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-lens"/></svg><h3>Soczewki kontaktowe</h3><p>Dobór, nauka zakładania i soczewki systematycznej wymiany zamawiane w salonie, także progresywne.</p><a class="more" href="#kontakt">Umów dobór</a></li>
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-sun"/></svg><h3>Okulary przeciwsłoneczne</h3><p>Także z korekcją, w oprawach marek z naszego salonu.</p><a class="more" href="#marki">Zobacz marki</a></li>
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-frames"/></svg><h3>Oprawy premium</h3><p>Kilkanaście marek, od włoskich opraw z tytanu po klasyki mody.</p><a class="more" href="marka-tree.html">Poznaj TREE Spectacles</a></li>
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-child"/></svg><h3>Okulary dla dzieci</h3><p>Lekkie, elastyczne oprawy i szkła odporne na upadki.</p><a class="more" href="podstrona-dzieci.html">Optyk dla dzieci</a></li>
-    </ul>
-  </div>
-</section>
-
-<!-- Children strip leading to the kids page (Złotno) -->
-<figure class="strip strip--short">
-  <img src="img/pas-dziecko.webp" width="1916" height="821" loading="lazy" alt="Uśmiechnięte dziecko przymierza kolorowe okulary">
-  <span class="badge">zdjęcie poglądowe</span>
-  <a class="strip__link pill pill--light" href="podstrona-dzieci.html">Optyk dla dzieci</a>
-</figure>
-
-<!-- Brands index -->
-<section class="brands wrap" id="marki" aria-labelledby="marki-title">
-  <h2 id="marki-title" class="h2">Oprawy <strong>w naszym salonie</strong></h2>
-  <ul class="brands__list">
-    <li><a href="marka-tree.html">TREE Spectacles</a></li><li>Carolina Herrera</li><li>BOSS</li><li>HUGO</li><li>Carrera</li><li>David Beckham</li><li>Love Moschino</li><li>Dolce&amp;Gabbana</li><li>Andy Wolf</li><li>Karavan Kids</li>
-  </ul>
-  <p class="note">Lista marek do potwierdzenia z salonem.</p>
-</section>
-
-<!-- Reviews: Ortorad's quote cards on a rounded accent block; no invented quotes -->
-<section class="reviews" id="opinie" aria-labelledby="opinie-title">
-  <div class="reviews__panel">
-    <h2 id="opinie-title" class="h2 h2--light">Co piszą <strong>pacjenci</strong></h2>
-    <div class="reviews__cards">
-      <blockquote class="quote"><p><span class="tbd">[miejsce na opinię pacjenta z ZnanyLekarz]</span></p><footer>imię, data opinii</footer></blockquote>
-      <blockquote class="quote"><p><span class="tbd">[miejsce na opinię pacjenta z ZnanyLekarz]</span></p><footer>imię, data opinii</footer></blockquote>
-    </div>
-  </div>
-  <a class="pill pill--accent" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">Wszystkie 223 opinie na ZnanyLekarz</a>
-</section>
-
-<!-- Contact: Ortorad's rounded accent blob, address instead of a form (booking is by phone) -->
-<section class="contact wrap" id="kontakt" aria-labelledby="kontakt-title">
-  <div class="contact__blob">
-    <h2 id="kontakt-title" class="h2 h2--light">Skontaktuj się <strong>z nami</strong></h2>
-    <dl class="contact__list">
-      <div><dt>Adres</dt><dd>ul. Piotrkowska 172/180, lok. 4U, Łódź</dd></div>
-      <div><dt>Telefon</dt><dd><a href="tel:+48426302830">42 630 28 30</a> · <a href="tel:+48780063682">780 063 682</a></dd></div>
-      <div><dt>Salon</dt><dd>pon.–pt. 10:00–18:00, sob. 10:00–14:00</dd></div>
-      <div><dt>Okulistka</dt><dd><span class="tbd">[dni i godziny gabinetu]</span></dd></div>
-    </dl>
-    <div class="pills">
-      <a class="pill pill--light" href="tel:+48426302830">Zadzwoń</a>
-      <a class="pill pill--dark" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">Umów przez ZnanyLekarz</a>
-    </div>
-  </div>
-  <figure class="contact__media">
-    <img src="img/poglad/brama.webp" width="1200" height="900" loading="lazy" alt="Brama kamienicy z łukowym przejazdem">
-    <span class="badge">zdjęcie poglądowe</span>
-    <figcaption class="contact__card"><strong>Piotrkowska 172/180</strong>Wejście bramą, lokal 4U <span class="tbd">[do potwierdzenia]</span></figcaption>
-  </figure>
-</section>
+<svg class="sprite" aria-hidden="true"><symbol id="star" viewBox="0 0 20 18"><path d="M10 .8l2.6 5.6 6 .6-4.5 4 1.3 6L10 14 4.6 17l1.3-6L1.4 7l6-.6z"/></symbol></svg>
 </main>
 
 <footer class="foot">
-  <div class="wrap foot__inner">
+  <div class="wrap foot__grid">
     <img class="foot__logo" src="img/logo-optyk-piotrkowska.png" width="464" height="196" alt="Optyk Piotrkowska">
-    <div>
-      <p class="foot__h">Salon i gabinet</p>
-      <p>ul. Piotrkowska 172/180, lok. 4U<br>Łódź</p>
-    </div>
-    <div>
-      <p class="foot__h">Kontakt</p>
-      <p><a href="tel:+48426302830">42 630 28 30</a><br><a href="tel:+48780063682">780 063 682</a><br><a href="mailto:kontakt@optykpiotrkowska.pl">kontakt@optykpiotrkowska.pl</a></p>
-    </div>
-    <div>
-      <p class="foot__h">Salon otwarty</p>
-      <p>pon.–pt. 10:00–18:00<br>sob. 10:00–14:00</p>
-    </div>
+    <dl class="foot__facts">
+      <div><dt>Adres</dt><dd>ul. Piotrkowska 172/180, lok. 4U, Łódź</dd></div>
+      <div><dt>Telefon</dt><dd><a href="tel:+48426302830">42 630 28 30</a> · <a href="tel:+48780063682">780 063 682</a></dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:kontakt@optykpiotrkowska.pl">kontakt@optykpiotrkowska.pl</a></dd></div>
+      <div><dt>Salon</dt><dd>pon.–pt. 10:00–18:00 · sob. 10:00–14:00</dd></div>
+    </dl>
   </div>
   <p class="wrap foot__legal">Optyk Piotrkowska S.C. · Polityka prywatności · Ustawienia cookies</p>
 </footer>
 
-<!-- Ortorad-style floating phone: always one tap away -->
-<a class="float-call" href="tel:+48426302830" aria-label="Zadzwoń: 42 630 28 30"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+<!-- Floating phone (Ortorad's solution): one tap from anywhere -->
+<a class="float-call" href="tel:+48426302830" aria-label="Zadzwoń: 42 630 28 30"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 5.5 5.5a2 2 0 0 1 2-2z"/></svg></a>
 
-<!-- Line icons (Złotno-style line icons) -->
-<svg class="sprite" aria-hidden="true">
-  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
-  <symbol id="i-eye" viewBox="0 0 48 48"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="6.5"/><circle cx="24" cy="24" r="2"/></symbol>
-  <symbol id="i-doctor" viewBox="0 0 48 48"><circle cx="24" cy="14" r="7"/><path d="M10 42c0-8 6-13 14-13s14 5 14 13"/><path d="M18 30v6a4 4 0 0 0 8 0M30 30v4"/><circle cx="30" cy="36" r="2"/></symbol>
-  <symbol id="i-scan" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="6"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6"/></symbol>
-  <symbol id="i-lens" viewBox="0 0 48 48"><path d="M8 28c0-10 7-18 16-18s16 8 16 18"/><path d="M8 28c5 4 10 6 16 6s11-2 16-6"/><circle cx="36" cy="10" r="3"/></symbol>
-  <symbol id="i-child" viewBox="0 0 48 48"><circle cx="24" cy="20" r="11"/><circle cx="19.5" cy="20" r="3.5"/><circle cx="28.5" cy="20" r="3.5"/><path d="M23 20h2M14 40c2-5 6-8 10-8s8 3 10 8"/></symbol>
-  <symbol id="i-car" viewBox="0 0 48 48"><path d="M8 30l4-10c1-3 3-4 6-4h12c3 0 5 1 6 4l4 10v8H8z"/><path d="M8 30h32"/><circle cx="15" cy="35" r="2"/><circle cx="33" cy="35" r="2"/></symbol>
-  <symbol id="i-work" viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="22" rx="2"/><path d="M18 38h12M24 32v6"/><circle cx="19" cy="21" r="4"/><circle cx="29" cy="21" r="4"/><path d="M23 21h2"/></symbol>
-  <symbol id="i-progressive" viewBox="0 0 48 48"><ellipse cx="24" cy="24" rx="18" ry="14"/><path d="M8 20h32M14 30h20"/></symbol>
-  <symbol id="i-frames" viewBox="0 0 48 48"><circle cx="14" cy="26" r="8"/><circle cx="34" cy="26" r="8"/><path d="M22 25c1-2 3-2 4 0M6 24l-2-8M42 24l2-8"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 48 48"><path d="M5 22h38"/><path d="M7 22c0 7 3 11 9 11s8-4 8-11M24 22c0 7 2 11 8 11s9-4 9-11"/><path d="M24 10v4M14 12l2 3M34 12l-2 3"/></symbol>
-  <symbol id="i-talk" viewBox="0 0 48 48"><path d="M8 10h24v16H18l-6 5v-5H8z"/><path d="M22 30v4h12l6 5v-5h2V18h-6"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 48 48"><rect x="10" y="6" width="28" height="36" rx="2"/><path d="M17 15h14M19 22h10M21 29h6M22 35h4"/></symbol>
-  <symbol id="i-check" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M16 24l6 6 11-12"/></symbol>
-</svg>
+<!-- Service-row preview: follows the pointer over the service table -->
+<div class="peek" aria-hidden="true"><img src="img/obj-foropter.webp" width="900" height="1125" alt=""></div>
 
-<script src="app.js?v=1e715dd5" defer></script>
+<script src="app.js?v=20f8b50d" defer></script>
 </body>
 </html>

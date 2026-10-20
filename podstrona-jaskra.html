@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diagnostyka jaskry w Łodzi — badanie GDx PRO | Optyk Piotrkowska</title>
 <meta name="description" content="Badanie GDx PRO: laserowa, bezdotykowa ocena włókien nerwowych siatkówki, bez kropli, około 10 minut. Wykonuje i opisuje okulistka, ul. Piotrkowska 172/180 w Łodzi.">
-<link rel="preload" href="fonts/familjen.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=c7323689">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=21de40d3">
 </head>
 <body>
 <a class="skip" href="#tresc">Przejdź do treści</a>
@@ -20,50 +20,60 @@
     <a class="top__logo" href="index.html"><img src="img/logo-optyk-piotrkowska.png" width="464" height="196" alt="Optyk Piotrkowska — strona główna"></a>
 
     <nav class="nav" aria-label="Główna">
-      <ul>
+      <ul class="nav__list">
         <li class="nav__group">
           <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="menu-badania">Badania</button>
-          <ul class="nav__panel" id="menu-badania" hidden>
-            <li><a href="index.html#badanie">Badanie wzroku</a></li>
-            <li><a href="index.html#uslugi">Wizyta u okulisty</a></li>
-            <li><a href="podstrona-jaskra.html">Diagnostyka jaskry</a></li>
-            <li><a href="podstrona-dzieci.html">Badanie wzroku dziecka</a></li>
-            <li><a href="index.html#uslugi">Soczewki kontaktowe</a></li>
-          </ul>
+          <div class="nav__panel" id="menu-badania" hidden>
+            <ul>
+              <li><a href="index.html#uslugi"><span>Badanie wzroku</span><span class="nav__price">100 zł</span></a></li>
+              <li><a href="index.html#okulistka"><span>Wizyta okulistyczna</span><span class="nav__price">200 zł</span></a></li>
+              <li><a href="podstrona-jaskra.html"><span>Diagnostyka jaskry GDx PRO</span><span class="nav__price"><span class="tbd">[cena]</span></span></a></li>
+              <li><a href="index.html#uslugi"><span>Dobór soczewek kontaktowych</span><span class="nav__price">200 zł</span></a></li>
+              <li><a href="podstrona-dzieci.html"><span>Konsultacja okulistyczna dzieci</span><span class="nav__price">200 zł</span></a></li>
+              <li><a href="index.html#uslugi"><span>Badanie kierowców</span><span class="nav__price">180 zł</span></a></li>
+            </ul>
+          </div>
         </li>
         <li class="nav__group">
           <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="menu-okulary">Okulary</button>
-          <ul class="nav__panel" id="menu-okulary" hidden>
-            <li><a href="index.html#okulary">Szkła progresywne</a></li>
-            <li><a href="index.html#marki">Oprawy i marki</a></li>
-            <li><a href="marka-tree.html">TREE Spectacles</a></li>
-            <li><a href="podstrona-dzieci.html">Okulary dla dzieci</a></li>
-          </ul>
+          <div class="nav__panel" id="menu-okulary" hidden>
+            <ul>
+              <li><a href="index.html#okulary"><span>Szkła progresywne</span></a></li>
+              <li><a href="index.html#okulary"><span>Oprawy i marki</span></a></li>
+              <li><a href="marka-tree.html"><span>TREE Spectacles</span></a></li>
+              <li><a href="podstrona-dzieci.html"><span>Okulary dla dzieci</span></a></li>
+            </ul>
+          </div>
         </li>
-        <li><a href="index.html#liczby">O nas</a></li>
-        <li><a href="index.html#opinie">Opinie</a></li>
-        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a class="nav__link" href="index.html#okulistka">Zespół</a></li>
+        <li><a class="nav__link" href="index.html#kontakt">Kontakt</a></li>
       </ul>
     </nav>
 
-    <a class="pill pill--dark top__book" href="tel:+48426302830">Umów wizytę</a>
-
+    <a class="top__phone" href="tel:+48426302830">42 630 28 30</a>
+    <a class="btn btn--book top__book" href="tel:+48426302830">Umów wizytę</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
   </div>
 
   <nav class="menu-mobile" id="menu-mobile" aria-label="Menu" hidden>
+    <p class="menu-mobile__h">Badania</p>
     <ul>
-      <li><a href="index.html#badanie">Badanie wzroku</a></li>
-      <li><a href="index.html#uslugi">Wizyta u okulisty</a></li>
-      <li><a href="podstrona-jaskra.html">Diagnostyka jaskry</a></li>
-      <li><a href="podstrona-dzieci.html">Badanie wzroku dziecka</a></li>
-      <li><a href="index.html#uslugi">Soczewki kontaktowe</a></li>
+      <li><a href="index.html#uslugi">Badanie wzroku</a></li>
+      <li><a href="index.html#okulistka">Wizyta okulistyczna</a></li>
+      <li><a href="podstrona-jaskra.html">Diagnostyka jaskry GDx PRO</a></li>
+      <li><a href="index.html#uslugi">Dobór soczewek kontaktowych</a></li>
+      <li><a href="podstrona-dzieci.html">Konsultacja okulistyczna dzieci</a></li>
+      <li><a href="index.html#uslugi">Badanie kierowców</a></li>
+    </ul>
+    <p class="menu-mobile__h">Okulary</p>
+    <ul>
       <li><a href="index.html#okulary">Szkła progresywne</a></li>
-      <li><a href="index.html#marki">Oprawy i marki</a></li>
+      <li><a href="index.html#okulary">Oprawy i marki</a></li>
       <li><a href="marka-tree.html">TREE Spectacles</a></li>
       <li><a href="podstrona-dzieci.html">Okulary dla dzieci</a></li>
-      <li><a href="index.html#liczby">O nas</a></li>
-      <li><a href="index.html#opinie">Opinie</a></li>
+    </ul>
+    <ul class="menu-mobile__plain">
+      <li><a href="index.html#okulistka">Zespół</a></li>
       <li><a href="index.html#kontakt">Kontakt</a></li>
     </ul>
   </nav>
@@ -72,131 +82,119 @@
 <main id="tresc">
 <nav class="crumbs wrap" aria-label="Okruszki"><ol><li><a href="index.html">Strona główna</a></li><li><a href="index.html#uslugi">Badania</a></li><li aria-current="page">Diagnostyka jaskry</li></ol></nav>
 
-<section class="hero hero--sub" aria-labelledby="sub-title">
-  <div class="hero__panel">
-    <div class="hero__copy">
-      <h1 id="sub-title" class="display display--sub">Diagnostyka jaskry <strong>badanie GDx&nbsp;PRO</strong></h1>
-      <p class="hero__lede">Laserowe, bezdotykowe badanie włókien nerwowych siatkówki. Pomaga okulistce ocenić ryzyko jaskry i&nbsp;zdecydować, czy wystarczy obserwacja, czy potrzebne jest leczenie.</p>
-      <div class="pills">
-        <a class="pill pill--dark" href="tel:+48426302830">Umów badanie GDx</a>
-        <a class="pill pill--light" href="tel:+48426302830">42 630 28 30</a>
-      </div>
-      <ul class="chips">
-        <li>wykonuje i opisuje okulistka</li><li>około 10 minut</li><li>bez kropli</li><li>cena: <span class="tbd">[do uzupełnienia]</span></li>
-      </ul>
+<section class="sub wrap" aria-labelledby="sub-title">
+  <div class="sub__copy">
+    <h1 id="sub-title" class="display display--sub">Diagnostyka jaskry: badanie GDx&nbsp;PRO</h1>
+    <p class="sub__lede">Laserowe, bezdotykowe badanie włókien nerwowych siatkówki. Pomaga okulistce ocenić ryzyko jaskry i&nbsp;zdecydować, czy wystarczy obserwacja, czy potrzebne jest leczenie.</p>
+    <dl class="facts">
+      <div><dt>Bada</dt><dd>okulistka dr Monika Szczygłowska-Uramowska</dd></div>
+      <div><dt>Czas</dt><dd>około 10 minut</dd></div>
+      <div><dt>Krople</dt><dd>niepotrzebne, po badaniu możesz prowadzić</dd></div>
+      <div><dt>Cena</dt><dd><span class="tbd">[do uzupełnienia]</span></dd></div>
+    </dl>
+    <div class="actions">
+      <a class="btn btn--book" href="tel:+48426302830">Umów badanie: 42 630 28 30</a>
+      <a class="link" href="#jak-wyglada">Jak wygląda badanie</a>
     </div>
-    <figure class="hero__media">
-      <img src="img/poglad/gdx.webp" width="1121" height="1402" alt="Aparat do laserowego badania siatkówki z podpórką pod brodę i monitorem">
-      <span class="badge">zdjęcie poglądowe</span>
-    </figure>
   </div>
+  <figure class="sub__media sub__media--dark">
+    <img src="img/obj-skaner.webp" width="900" height="1125" alt="Aparat do laserowego badania siatkówki na czarnym tle">
+    <span class="badge">zdjęcie poglądowe</span>
+  </figure>
 </section>
 
-<section class="intro wrap" aria-labelledby="mierzy-title">
-  <div class="intro__copy">
-    <h2 id="mierzy-title" class="h2">Co pokazuje <strong>badanie GDx PRO</strong></h2>
+<section class="split wrap" aria-labelledby="mierzy-title">
+  <div>
+    <h2 id="mierzy-title" class="h2">Co pokazuje badanie</h2>
     <p>W jaskrze zanikają włókna nerwowe siatkówki, a z czasem uszkodzeniu ulega nerw wzrokowy. GDx PRO mierzy grubość warstwy tych włókien, a analiza statystyczna wyniku pokazuje, czy coś odbiega od normy.</p>
   </div>
-  <ul class="checks">
-    <li><svg class="icon icon--accent" aria-hidden="true"><use href="#i-check"/></svg>grubość warstwy włókien nerwowych siatkówki</li>
-    <li><svg class="icon icon--accent" aria-hidden="true"><use href="#i-check"/></svg>pierwsze oznaki jaskry, na poziomie komórek zwojowych siatkówki</li>
-    <li><svg class="icon icon--accent" aria-hidden="true"><use href="#i-check"/></svg>ryzyko zmian jaskrowych i stopień ich zaawansowania</li>
-    <li><svg class="icon icon--accent" aria-hidden="true"><use href="#i-check"/></svg>zmiany przy neuropatii niedokrwiennej nerwu wzrokowego (AION)</li>
-    <li><svg class="icon icon--accent" aria-hidden="true"><use href="#i-check"/></svg>druzy tarczy nerwu wzrokowego</li>
+  <ul class="ruled">
+    <li>grubość warstwy włókien nerwowych siatkówki</li>
+    <li>pierwsze oznaki jaskry, na poziomie komórek zwojowych siatkówki</li>
+    <li>ryzyko zmian jaskrowych i stopień ich zaawansowania</li>
+    <li>zmiany przy neuropatii niedokrwiennej nerwu wzrokowego (AION)</li>
+    <li>druzy tarczy nerwu wzrokowego</li>
   </ul>
 </section>
 
 <section class="stages wrap" id="jak-wyglada" aria-labelledby="jak-title">
   <div class="stages__head">
-    <h2 id="jak-title" class="h2">Jak wygląda <strong>badanie</strong></h2>
-    <p>Bezdotykowe i bezbolesne. Nie wymaga kropli rozszerzających źrenice, więc po badaniu możesz od razu prowadzić samochód. <span class="tbd">[przebieg do zatwierdzenia przez okulistkę]</span></p>
+    <h2 id="jak-title" class="h2">Jak wygląda badanie</h2>
+    <p>Bezdotykowe i bezbolesne. <span class="tbd">[przebieg do zatwierdzenia przez okulistkę]</span></p>
   </div>
-  <ol class="stages__list">
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-talk"/></svg><p class="stage__no">Etap I</p><h3 class="stage__title">Rozmowa</h3><p>Okulistka pyta o jaskrę w rodzinie, wcześniejsze wyniki ciśnienia w oku i leki.</p></li>
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-scan"/></svg><p class="stage__no">Etap II</p><h3 class="stage__title">Pomiar</h3><p>Siadasz przy aparacie i patrzysz na punkt. Laser skanuje dno oka, niczego nie dotykając.</p></li>
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-chart"/></svg><p class="stage__no">Etap III</p><h3 class="stage__title">Opis wyniku</h3><p>Okulistka opisuje badanie i omawia wynik dla każdego oka.</p></li>
-    <li class="stage"><svg class="icon icon--line" aria-hidden="true"><use href="#i-check"/></svg><p class="stage__no">Etap IV</p><h3 class="stage__title">Dalsze kroki</h3><p>Obserwacja i kontrola za jakiś czas, dalsza diagnostyka albo leczenie.</p></li>
+  <ol class="stages__list stages__list--four">
+    <li><span class="stages__no" aria-hidden="true">1</span><h3>Rozmowa</h3><p>Okulistka pyta o jaskrę w rodzinie, wcześniejsze wyniki ciśnienia w oku i leki.</p></li>
+    <li><span class="stages__no" aria-hidden="true">2</span><h3>Pomiar</h3><p>Siadasz przy aparacie i patrzysz na punkt. Laser skanuje dno oka, niczego nie dotykając.</p></li>
+    <li><span class="stages__no" aria-hidden="true">3</span><h3>Opis wyniku</h3><p>Okulistka opisuje badanie i omawia wynik dla każdego oka.</p></li>
+    <li><span class="stages__no" aria-hidden="true">4</span><h3>Dalsze kroki</h3><p>Obserwacja i kontrola za jakiś czas, dalsza diagnostyka albo leczenie.</p></li>
   </ol>
 </section>
 
-<section class="band" aria-labelledby="inne-title">
+<section class="instruments" aria-labelledby="inne-title">
   <div class="wrap">
-    <h2 id="inne-title" class="h2 h2--center h2--light">Inne badania <strong>przy podejrzeniu jaskry</strong></h2>
-    <ul class="cards cards--two">
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-eye"/></svg><h3>Tonometria</h3><p>Pomiar ciśnienia w oku, w znieczuleniu miejscowym. Wykonuje okulistka w ramach wizyty.</p></li>
-      <li class="card"><svg class="icon icon--line" aria-hidden="true"><use href="#i-doctor"/></svg><h3>Badanie dna oka</h3><p>Ocena nerwu wzrokowego i siatkówki przy lampie szczelinowej. Po kroplach rozszerzających źrenice nie prowadź przez 2–3 godziny.</p></li>
+    <h2 id="inne-title" class="h2 h2--light">Inne badania przy podejrzeniu jaskry</h2>
+    <ul class="instruments__list instruments__list--two">
+      <li>
+        <figure><img src="img/obj-lampa.webp" width="900" height="1125" loading="lazy" alt="Lampa szczelinowa z wąską wiązką światła"></figure>
+        <h3>Badanie dna oka</h3>
+        <p>Ocena nerwu wzrokowego i siatkówki przy lampie szczelinowej. Po kroplach rozszerzających źrenice nie prowadź przez 2–3 godziny.</p>
+      </li>
+      <li>
+        <figure><img src="img/obj-tonometr.webp" width="900" height="1125" loading="lazy" alt="Tonometr aplanacyjny przy lampie szczelinowej"></figure>
+        <h3>Tonometria</h3>
+        <p>Pomiar ciśnienia w oku, w znieczuleniu miejscowym. Oba badania wykonuje okulistka w ramach wizyty, 200 zł.</p>
+      </li>
     </ul>
-    <p class="band__cta"><a class="pill pill--mint" href="https://www.znanylekarz.pl/profil/monika-szczyglowska-uramowska" rel="noopener">Umów wizytę u okulisty · 200 zł</a></p>
   </div>
 </section>
 
 <section class="faq wrap" aria-labelledby="faq-title">
-  <h2 id="faq-title" class="h2">Pytania <strong>pacjentów</strong></h2>
-  <details><summary>Czy badanie boli?</summary><p>Nie. Badanie GDx PRO jest bezdotykowe i bezbolesne. Trwa około 10 minut.</p></details>
-  <details><summary>Czy po badaniu mogę prowadzić samochód?</summary><p>Tak. Do badania GDx PRO nie podajemy kropli rozszerzających źrenice.</p></details>
-  <details><summary>Kto powinien zrobić badanie?</summary><p>O potrzebie badania decyduje okulistka. <span class="tbd">[wskazania do zatwierdzenia przez okulistkę]</span></p></details>
-  <details><summary>Ile kosztuje badanie?</summary><p><span class="tbd">[cena do uzupełnienia]</span> Wizyta okulistyczna kosztuje 200 zł, w sobotę 250 zł.</p></details>
+  <h2 id="faq-title" class="h2">Pytania pacjentów</h2>
+  <div class="faq__list">
+    <details><summary>Czy badanie boli?</summary><p>Nie. Badanie GDx PRO jest bezdotykowe i bezbolesne. Trwa około 10 minut.</p></details>
+    <details><summary>Czy po badaniu mogę prowadzić samochód?</summary><p>Tak. Do badania GDx PRO nie podajemy kropli rozszerzających źrenice.</p></details>
+    <details><summary>Kto powinien zrobić badanie?</summary><p>O potrzebie badania decyduje okulistka. <span class="tbd">[wskazania do zatwierdzenia przez okulistkę]</span></p></details>
+    <details><summary>Ile kosztuje badanie?</summary><p><span class="tbd">[cena do uzupełnienia]</span> Wizyta okulistyczna kosztuje 200 zł, w sobotę 250 zł.</p></details>
+  </div>
 </section>
 
-<section class="cta wrap" aria-labelledby="cta-title">
-  <div class="cta__blob">
-    <h2 id="cta-title" class="h2 h2--light">Umów <strong>badanie GDx PRO</strong></h2>
+<section class="closing" aria-labelledby="cta-title">
+  <div class="wrap closing__inner">
+    <h2 id="cta-title" class="h2 h2--light">Umów badanie GDx PRO</h2>
     <p>Zapisujemy telefonicznie, także na wizytę u okulistki.</p>
-    <a class="pill pill--light" href="tel:+48426302830">Zadzwoń: 42 630 28 30</a>
+    <a class="btn btn--book" href="tel:+48426302830">Zadzwoń: 42 630 28 30</a>
   </div>
 </section>
 
 <section class="related wrap" aria-labelledby="powiazane-title">
   <h2 id="powiazane-title" class="h3">Zobacz też</h2>
-  <ul class="tiles tiles--small">
-    <li class="tile tile--accent"><a href="index.html#uslugi"><svg class="icon" aria-hidden="true"><use href="#i-doctor"/></svg><span>Wizyta u okulisty</span></a></li>
-    <li class="tile tile--dark"><a href="index.html#badanie"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg><span>Badanie wzroku</span></a></li>
-    <li class="tile tile--dark"><a href="podstrona-dzieci.html"><svg class="icon" aria-hidden="true"><use href="#i-child"/></svg><span>Badanie wzroku dziecka</span></a></li>
-    <li class="tile tile--accent tile--round"><a href="index.html#kontakt"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Dojazd i godziny</span></a></li>
+  <ul class="table table--compact">
+    <li><a href="index.html#okulistka"><span class="table__name">Wizyta okulistyczna</span><span class="table__who">okulistka</span><span class="table__price">200 zł</span></a></li>
+    <li><a href="index.html#badanie"><span class="table__name">Badanie wzroku</span><span class="table__who">optometrystka</span><span class="table__price">100 zł</span></a></li>
+    <li><a href="podstrona-dzieci.html"><span class="table__name">Konsultacja okulistyczna dzieci</span><span class="table__who">okulistka</span><span class="table__price">200 zł</span></a></li>
   </ul>
 </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap foot__inner">
+  <div class="wrap foot__grid">
     <img class="foot__logo" src="img/logo-optyk-piotrkowska.png" width="464" height="196" alt="Optyk Piotrkowska">
-    <div>
-      <p class="foot__h">Salon i gabinet</p>
-      <p>ul. Piotrkowska 172/180, lok. 4U<br>Łódź</p>
-    </div>
-    <div>
-      <p class="foot__h">Kontakt</p>
-      <p><a href="tel:+48426302830">42 630 28 30</a><br><a href="tel:+48780063682">780 063 682</a><br><a href="mailto:kontakt@optykpiotrkowska.pl">kontakt@optykpiotrkowska.pl</a></p>
-    </div>
-    <div>
-      <p class="foot__h">Salon otwarty</p>
-      <p>pon.–pt. 10:00–18:00<br>sob. 10:00–14:00</p>
-    </div>
+    <dl class="foot__facts">
+      <div><dt>Adres</dt><dd>ul. Piotrkowska 172/180, lok. 4U, Łódź</dd></div>
+      <div><dt>Telefon</dt><dd><a href="tel:+48426302830">42 630 28 30</a> · <a href="tel:+48780063682">780 063 682</a></dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:kontakt@optykpiotrkowska.pl">kontakt@optykpiotrkowska.pl</a></dd></div>
+      <div><dt>Salon</dt><dd>pon.–pt. 10:00–18:00 · sob. 10:00–14:00</dd></div>
+    </dl>
   </div>
   <p class="wrap foot__legal">Optyk Piotrkowska S.C. · Polityka prywatności · Ustawienia cookies</p>
 </footer>
 
-<!-- Ortorad-style floating phone: always one tap away -->
-<a class="float-call" href="tel:+48426302830" aria-label="Zadzwoń: 42 630 28 30"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+<!-- Floating phone (Ortorad's solution): one tap from anywhere -->
+<a class="float-call" href="tel:+48426302830" aria-label="Zadzwoń: 42 630 28 30"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 5.5 5.5a2 2 0 0 1 2-2z"/></svg></a>
 
-<!-- Line icons (Złotno-style line icons) -->
-<svg class="sprite" aria-hidden="true">
-  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
-  <symbol id="i-eye" viewBox="0 0 48 48"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="6.5"/><circle cx="24" cy="24" r="2"/></symbol>
-  <symbol id="i-doctor" viewBox="0 0 48 48"><circle cx="24" cy="14" r="7"/><path d="M10 42c0-8 6-13 14-13s14 5 14 13"/><path d="M18 30v6a4 4 0 0 0 8 0M30 30v4"/><circle cx="30" cy="36" r="2"/></symbol>
-  <symbol id="i-scan" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="6"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6"/></symbol>
-  <symbol id="i-lens" viewBox="0 0 48 48"><path d="M8 28c0-10 7-18 16-18s16 8 16 18"/><path d="M8 28c5 4 10 6 16 6s11-2 16-6"/><circle cx="36" cy="10" r="3"/></symbol>
-  <symbol id="i-child" viewBox="0 0 48 48"><circle cx="24" cy="20" r="11"/><circle cx="19.5" cy="20" r="3.5"/><circle cx="28.5" cy="20" r="3.5"/><path d="M23 20h2M14 40c2-5 6-8 10-8s8 3 10 8"/></symbol>
-  <symbol id="i-car" viewBox="0 0 48 48"><path d="M8 30l4-10c1-3 3-4 6-4h12c3 0 5 1 6 4l4 10v8H8z"/><path d="M8 30h32"/><circle cx="15" cy="35" r="2"/><circle cx="33" cy="35" r="2"/></symbol>
-  <symbol id="i-work" viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="22" rx="2"/><path d="M18 38h12M24 32v6"/><circle cx="19" cy="21" r="4"/><circle cx="29" cy="21" r="4"/><path d="M23 21h2"/></symbol>
-  <symbol id="i-progressive" viewBox="0 0 48 48"><ellipse cx="24" cy="24" rx="18" ry="14"/><path d="M8 20h32M14 30h20"/></symbol>
-  <symbol id="i-frames" viewBox="0 0 48 48"><circle cx="14" cy="26" r="8"/><circle cx="34" cy="26" r="8"/><path d="M22 25c1-2 3-2 4 0M6 24l-2-8M42 24l2-8"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 48 48"><path d="M5 22h38"/><path d="M7 22c0 7 3 11 9 11s8-4 8-11M24 22c0 7 2 11 8 11s9-4 9-11"/><path d="M24 10v4M14 12l2 3M34 12l-2 3"/></symbol>
-  <symbol id="i-talk" viewBox="0 0 48 48"><path d="M8 10h24v16H18l-6 5v-5H8z"/><path d="M22 30v4h12l6 5v-5h2V18h-6"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 48 48"><rect x="10" y="6" width="28" height="36" rx="2"/><path d="M17 15h14M19 22h10M21 29h6M22 35h4"/></symbol>
-  <symbol id="i-check" viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M16 24l6 6 11-12"/></symbol>
-</svg>
+<!-- Service-row preview: follows the pointer over the service table -->
+<div class="peek" aria-hidden="true"><img src="img/obj-foropter.webp" width="900" height="1125" alt=""></div>
 
-<script src="app.js?v=1e715dd5" defer></script>
+<script src="app.js?v=20f8b50d" defer></script>
 </body>
 </html>
