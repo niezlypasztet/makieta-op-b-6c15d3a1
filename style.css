@@ -96,8 +96,9 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 .menu-mobile__plain { margin-top: 12px !important; }
 
 /* First viewport: copy left, photo to the right edge, the visit card bridging both */
-.hero { position: relative; display: grid; grid-template-columns: minmax(0, 43fr) minmax(0, 57fr); min-height: clamp(620px, calc(100svh - var(--header) - 32px), 860px); }
-.hero__copy { align-self: center; padding: 56px clamp(24px, 3vw, 48px) 56px max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter))); }
+/* Capped at the header width: wider, the photo column crops the face under the visit card */
+.hero { --hero-max: 1440px; max-width: var(--hero-max); margin: 0 auto; position: relative; display: grid; grid-template-columns: minmax(0, 43fr) minmax(0, 57fr); min-height: clamp(620px, calc(100svh - var(--header) - 32px), 860px); }
+.hero__copy { align-self: center; padding: 56px clamp(24px, 3vw, 48px) 56px max(var(--gutter), calc((min(100vw, var(--hero-max)) - var(--wrap)) / 2 + var(--gutter))); }
 .hero__lede { max-width: 30em; margin: 28px 0 0; font-size: clamp(1.125rem, 1.3vw, 1.25rem); color: var(--ink-2); }
 .rating { display: flex; align-items: center; gap: 12px; margin: 28px 0 0; font-size: .9375rem; }
 .stars { width: 98px; height: 18px; fill: var(--ink); flex: none; }
@@ -311,3 +312,4 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 @media (prefers-reduced-motion: reduce) {
   .table__name, .table a::after, .peek, .faq summary::after, .nav__trigger::after { transition: none; }
 }
+
