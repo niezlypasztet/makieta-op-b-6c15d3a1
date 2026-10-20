@@ -122,6 +122,21 @@ function initPeek() {
   table.addEventListener('pointerleave', () => peek.classList.remove('is-on'));
 }
 
+// 4. Floating phone: hidden while the first screen is in view, since the
+//    header and the visit card already show the number there.
+function initFloatCall() {
+  const call = document.querySelector('.float-call');
+  const hero = document.querySelector('.hero');
+  if (!call || !hero) {
+    return;
+  }
+  const watch = new IntersectionObserver(([entry]) => {
+    call.classList.toggle('is-away', entry.isIntersecting);
+  });
+  watch.observe(hero);
+}
+
 initDropdowns();
 initMenu();
 initPeek();
+initFloatCall();
