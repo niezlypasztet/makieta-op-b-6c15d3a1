@@ -160,9 +160,6 @@ components:
     padding: "22px 0"
   price-row-compact:
     padding: "16px 0"
-  peek:
-    backgroundColor: "{colors.black}"
-    width: "220px"
   instrument-band:
     backgroundColor: "{colors.photo-black}"
     textColor: "{colors.on-black}"
@@ -211,7 +208,7 @@ Scope: the version B mockup only (`makieta-b/`). Version A keeps its own system 
 
 The practice presents itself the way it measures: precisely. Pages are near-white sheets held on a strict grid, with information set in ruled rows like a ledger (service, who performs it, price) and figures set large in light, tabular numerals. Against that paper, the equipment is shown as an object of value: foropter, slit lamp and GDx scanner photographed on a black studio backdrop and placed in a band of the same black, so the photos have no visible frame.
 
-Density is calm and generous. Sections breathe on a fluid rhythm of 80 to 152px, type is light at large sizes and condensed at small ones, and colour is almost absent: ink, grey, mist, hairline, black. The single chromatic note is bottle green, and it marks the action of booking or calling. Depth is flat; only layers that genuinely float (visit card, dropdown, pointer preview, phone button) cast a shadow.
+Density is calm and generous. Sections breathe on a fluid rhythm of 80 to 152px, type is light at large sizes and condensed at small ones, and colour is almost absent: ink, grey, mist, hairline, black. The single chromatic note is bottle green, and it marks the action of booking or calling. Depth is flat; only layers that genuinely float (visit card, dropdown, phone button) cast a shadow.
 
 The world refuses rounded-blob pastel clinic templates and the navy-and-gold palette of the client's reference site; it keeps that site's solutions (dropdown menu, person in glasses in the first viewport, exam as numbered stages, real figures, floating phone) and re-dresses them in this ledger language.
 
@@ -236,7 +233,7 @@ A near-monochrome ink-on-white palette with two blacks and one reserved green.
 - **Measured Grey** (`ink-2`): secondary text: ledes, descriptions, prices in the visit card, the "who" column, captions, FAQ answers. 7:1 on white, 6.3:1 on mist.
 - **Clinic Mist** (`mist`): background of quiet sections (doctor, contact) and the hero photo placeholder.
 - **Hairline** (`rule`): row dividers, header bottom border, dropdown border, separator slashes in breadcrumbs and the brand list. Decorative only; never carries text.
-- **Salon Black** (`black`): closing band, footer, mockup guide bar, pointer-preview backdrop, dark product figure.
+- **Salon Black** (`black`): closing band, footer, mockup guide bar, dark product figure.
 - **Studio Black** (`photo-black`): only the instrument band. It matches the studio photos' own backdrop so the objects float with no rectangle.
 - **Paper White** (`white`): page ground, header, visit card, dropdown panel.
 - **On-Black** (`on-black`) and **On-Black Grey** (`on-black-2`): primary and secondary text on either black (8.9:1 and above).
@@ -290,12 +287,11 @@ Inner spacing steps are 8, 16, 24, 40 and 56px, with ruled rows padded 22px (tab
 
 ## Elevation & Depth
 
-Flat by default. Depth comes from change of ground (white, mist, black) and from rules, not from shadow. Shadows exist only on the four layers that physically float above the page.
+Flat by default. Depth comes from change of ground (white, mist, black) and from rules, not from shadow. Shadows exist only on the three layers that physically float above the page.
 
 ### Shadow Vocabulary
 - **Card lift** (`box-shadow: 0 30px 60px rgba(11, 13, 12, .18), 0 2px 6px rgba(11, 13, 12, .08)`): the visit card over the hero photo.
-- **Panel drop** (`box-shadow: 0 24px 48px rgba(11, 13, 12, .12)`): navigation dropdown.
-- **Preview drop** (`box-shadow: 0 20px 40px rgba(11, 13, 12, .25)`): the pointer-following photo preview.
+- **Panel drop** (`box-shadow: 0 28px 40px -20px rgba(11, 13, 12, .22)`): the navigation panel.
 - **Button float** (`box-shadow: 0 12px 28px rgba(11, 13, 12, .3)`): the floating phone.
 
 ### Named Rules
@@ -316,18 +312,15 @@ Quiet, rectangular and decisive; the green is the message.
 
 ### Navigation
 - **Header:** sticky white bar, 76px (64px mobile), hairline bottom border; logo at 116px, 16px sentence-case links (500) with 30px gaps, the main phone number in 600, then the green booking button.
-- **Dropdown:** triggers carry a drawn chevron that flips on open; hover and open states underline 2px at 8px offset. The panel is a 380px white sheet with hairline border and Panel drop, listing services as ruled rows with tabular prices in Measured Grey on the right. One panel open at a time; closes on outside click and Escape, returning focus.
+- **Dropdown:** triggers carry a drawn chevron that flips on open; hover and open states underline 2px at 8px offset. The panel is a full-width white sheet flush under the header (hairline top, Panel drop), its content on the page grid: under "Badania" the services as 64px ruled rows in two columns with tabular prices (Saturday price beneath) and a mist booking box; under "Okulary" the links beside two photo cards. One panel open at a time; closes on choosing a link, outside click, focus leaving the menu, the narrow breakpoint, and Escape (returning focus). Nav buttons and links share one 44px box so all items sit on one line.
 - **Mobile:** bordered "Menu" toggle opens a full-width sheet of ruled 18px links grouped under Label headings; closes on link choice or when the window widens.
 - **Breadcrumbs:** 14px Measured Grey, hairline slashes.
 
 ### Visit Card (signature)
-The first viewport's working action: a white index card over the hero photo, 420px wide, with Card lift. A 22px Title, then a 2px ink-ruled list of visit types (name left, tabular price in Measured Grey right, drawn arrow), then the full-width green call button and a 13px note. Row hover turns name and arrow green.
+The first viewport's working action: a white index card over the hero photo, 420px wide, with Card lift; its bottom-left corner runs parallel to the photo's large corner. A 22px Title, then a 2px ink-ruled list of visit types: name left, tabular price in Measured Grey with the Saturday price beneath where one applies, and a 32px mist circle with a drawn icon saying how the row books (handset: call; calendar: online via ZnanyLekarz). Then the full-width green call button and one 15px note with the salon hours. Row hover turns the name green and fills the circle green. Between 761 and 1100px the card leaves the photo and sits under the copy; on short desktop screens (820px tall or less) it compacts and drops the note so the face stays clear. On phones the hero carries its own call button under the lede, and the floating phone stays hidden only while one of these call buttons is on screen.
 
 ### Price Table (signature)
 The services ledger, reused on every page. A 2px ink top rule, then rows on a four-column grid: service name at Row size, "who" in Label style, right-aligned tabular price (with a 13px secondary line such as the Saturday price), and an 18px drawn arrow. On hover the name slides 8px right and turns green, the arrow moves 4px. The compact variant (16px rows) closes subpages as related links.
-
-### Pointer Preview (signature)
-On fine pointers, hovering a price-table row shows that service's photo in a 220px, 4:5 frame beside the cursor, offset 24px and trailing it with an easing of 0.2 of the remaining distance per frame; it fades in over 0.25s. Disabled on touch and under reduced motion.
 
 ### Instrument Band
 Studio Black band at section padding, Headline in On-Black, then a three- or two-column set of 4:5 instrument photos with edge-fade masks, each followed by a 500 20px name and an On-Black Grey description; a 13px provenance note closes the band.

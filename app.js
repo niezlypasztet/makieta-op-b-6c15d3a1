@@ -1,10 +1,9 @@
-// Optyk Piotrkowska, version B: navigation and the service-row preview.
+// Optyk Piotrkowska, version B: navigation and the floating phone.
 
 const WIDE_MIN_PX = 1101;     // above the 1100px breakpoint the desktop nav shows
-const PEEK_OFFSET_PX = 24;    // gap between the pointer and the preview's corner
-const PEEK_EASE = 0.2;        // fraction of the remaining distance per frame
 
-// 1. Desktop dropdowns: one open at a time; close on outside click and Escape.
+// 1. Desktop dropdowns: one open at a time; close on outside click, Escape,
+//    choosing a link, focus leaving the menu, and switching to the narrow layout.
 function initDropdowns() {
   const triggers = [...document.querySelectorAll('.nav__trigger')];
   const panel = (t) => document.getElementById(t.getAttribute('aria-controls'));
@@ -25,10 +24,17 @@ function initDropdowns() {
       t.setAttribute('aria-expanded', String(!open));
       panel(t).hidden = open;
     });
+
+    const group = t.closest('.nav__group');
+    group.addEventListener('focusout', (e) => {
+      if (e.relatedTarget && !group.contains(e.relatedTarget)) {
+        close();
+      }
+    });
   });
 
   document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav__group')) {
+    if (e.target.closest('.nav__panel a') || !e.target.closest('.nav__group')) {
       close();
     }
   });
@@ -42,27 +48,48 @@ function initDropdowns() {
       open.focus();
     }
   });
+
+  const wide = window.matchMedia(`(min-width: ${WIDE_MIN_PX}px)`);
+  wide.addEventListener('change', () => {
+    if (!wide.matches) {
+      close();
+    }
+  });
 }
 
-// 2. Mobile menu: toggles, closes after choosing a link or when the window widens.
+// 2. Mobile menu: toggles; closes after choosing a link, on Escape (focus back
+//    on the toggle), on a tap outside the header, or when the window widens.
 function initMenu() {
   const toggle = document.querySelector('.nav-toggle');
   const menu = document.getElementById('menu-mobile');
   if (!toggle || !menu) {
     return;
   }
+  const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
   const close = () => {
     toggle.setAttribute('aria-expanded', 'false');
     menu.hidden = true;
   };
 
   toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
+    const open = isOpen();
     toggle.setAttribute('aria-expanded', String(!open));
     menu.hidden = open;
   });
   menu.addEventListener('click', (e) => {
     if (e.target.closest('a')) {
+      close();
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !isOpen()) {
+      return;
+    }
+    close();
+    toggle.focus();
+  });
+  document.addEventListener('click', (e) => {
+    if (isOpen() && !e.target.closest('.top')) {
       close();
     }
   });
@@ -75,68 +102,29 @@ function initMenu() {
   });
 }
 
-// 3. Service table: on a fine pointer, each row shows its photo beside the
-//    pointer and the preview trails it. It sits above the pointer so the
-//    hovered row stays readable. Touch and reduced motion skip it.
-function initPeek() {
-  const table = document.querySelector('[data-peek-table]');
-  const peek = document.querySelector('.peek');
-  const fine = window.matchMedia('(pointer: fine)').matches;
-  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!table || !peek || !fine || still) {
-    return;
-  }
-  const img = peek.querySelector('img');
-  let pos = { x: 0, y: 0 };
-  let target = { x: 0, y: 0 };
-  let running = false;
-
-  const tick = () => {
-    pos = { x: pos.x + (target.x - pos.x) * PEEK_EASE, y: pos.y + (target.y - pos.y) * PEEK_EASE };
-    peek.style.transform = `translate(${pos.x}px, ${pos.y}px)`;
-    if (Math.abs(target.x - pos.x) < 0.5 && Math.abs(target.y - pos.y) < 0.5) {
-      running = false;
-      return;
-    }
-    requestAnimationFrame(tick);
-  };
-  const follow = (e) => {
-    target = { x: e.clientX + PEEK_OFFSET_PX, y: e.clientY - peek.offsetHeight - PEEK_OFFSET_PX };
-    if (!running) {
-      running = true;
-      requestAnimationFrame(tick);
-    }
-  };
-
-  table.querySelectorAll('[data-peek]').forEach((row) => {
-    row.addEventListener('pointerenter', (e) => {
-      img.src = row.dataset.peek;
-      if (!peek.classList.contains('is-on')) {
-        pos = { x: e.clientX + PEEK_OFFSET_PX, y: e.clientY - peek.offsetHeight - PEEK_OFFSET_PX };
-      }
-      peek.classList.add('is-on');
-      follow(e);
-    });
-    row.addEventListener('pointermove', follow);
-  });
-  table.addEventListener('pointerleave', () => peek.classList.remove('is-on'));
-}
-
-// 4. Floating phone: hidden while the first screen is in view, since the
-//    header and the visit card already show the number there.
+// 3. Floating phone: hidden only while another call button is on screen
+//    (the hero's phone-only button or the visit card's), so the first
+//    screen never shows two calls and never shows none.
 function initFloatCall() {
   const call = document.querySelector('.float-call');
-  const hero = document.querySelector('.hero');
-  if (!call || !hero) {
+  const anchors = [...document.querySelectorAll('.hero__call .btn, .visit .btn')];
+  if (!call || anchors.length === 0) {
     return;
   }
-  const watch = new IntersectionObserver(([entry]) => {
-    call.classList.toggle('is-away', entry.isIntersecting);
+  const visible = new Set();
+  const watch = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        visible.add(entry.target);
+      } else {
+        visible.delete(entry.target);
+      }
+    });
+    call.classList.toggle('is-away', visible.size > 0);
   });
-  watch.observe(hero);
+  anchors.forEach((a) => watch.observe(a));
 }
 
 initDropdowns();
 initMenu();
-initPeek();
 initFloatCall();
