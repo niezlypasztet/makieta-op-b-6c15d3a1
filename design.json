@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T15:19:48+00:00",
+  "title": "Design System: Optyk Piotrkowska, version B",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Instrument Ink",
+        "canonical": "#111412",
+        "tonalRamp": [
+          "oklch(15% 0.006 156.6)",
+          "oklch(26% 0.006 156.6)",
+          "oklch(38% 0.006 156.6)",
+          "oklch(49% 0.006 156.6)",
+          "oklch(61% 0.006 156.6)",
+          "oklch(72% 0.006 156.6)",
+          "oklch(84% 0.006 156.6)",
+          "oklch(95% 0.006 156.6)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Measured Grey",
+        "canonical": "#545b57",
+        "tonalRamp": [
+          "oklch(15% 0.011 161.0)",
+          "oklch(26% 0.011 161.0)",
+          "oklch(38% 0.011 161.0)",
+          "oklch(49% 0.011 161.0)",
+          "oklch(61% 0.011 161.0)",
+          "oklch(72% 0.011 161.0)",
+          "oklch(84% 0.011 161.0)",
+          "oklch(95% 0.011 161.0)"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Clinic Mist",
+        "canonical": "#f2f3f1",
+        "tonalRamp": [
+          "oklch(15% 0.003 128.5)",
+          "oklch(26% 0.003 128.5)",
+          "oklch(38% 0.003 128.5)",
+          "oklch(49% 0.003 128.5)",
+          "oklch(61% 0.003 128.5)",
+          "oklch(72% 0.003 128.5)",
+          "oklch(84% 0.003 128.5)",
+          "oklch(95% 0.003 128.5)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#d9dcda",
+        "tonalRamp": [
+          "oklch(15% 0.004 157.2)",
+          "oklch(26% 0.004 157.2)",
+          "oklch(38% 0.004 157.2)",
+          "oklch(49% 0.004 157.2)",
+          "oklch(61% 0.004 157.2)",
+          "oklch(72% 0.004 157.2)",
+          "oklch(84% 0.004 157.2)",
+          "oklch(95% 0.004 157.2)"
+        ]
+      },
+      "black": {
+        "role": "neutral",
+        "displayName": "Salon Black",
+        "canonical": "#0b0d0c",
+        "tonalRamp": [
+          "oklch(15% 0.004 164.5)",
+          "oklch(26% 0.004 164.5)",
+          "oklch(38% 0.004 164.5)",
+          "oklch(49% 0.004 164.5)",
+          "oklch(61% 0.004 164.5)",
+          "oklch(72% 0.004 164.5)",
+          "oklch(84% 0.004 164.5)",
+          "oklch(95% 0.004 164.5)"
+        ]
+      },
+      "photo-black": {
+        "role": "neutral",
+        "displayName": "Studio Black",
+        "canonical": "#010101",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(38% 0.000 89.9)",
+          "oklch(49% 0.000 89.9)",
+          "oklch(61% 0.000 89.9)",
+          "oklch(72% 0.000 89.9)",
+          "oklch(84% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "on-black": {
+        "role": "neutral",
+        "displayName": "On-Black",
+        "canonical": "#f4f5f4",
+        "tonalRamp": [
+          "oklch(15% 0.002 145.6)",
+          "oklch(26% 0.002 145.6)",
+          "oklch(38% 0.002 145.6)",
+          "oklch(49% 0.002 145.6)",
+          "oklch(61% 0.002 145.6)",
+          "oklch(72% 0.002 145.6)",
+          "oklch(84% 0.002 145.6)",
+          "oklch(95% 0.002 145.6)"
+        ]
+      },
+      "on-black-2": {
+        "role": "neutral",
+        "displayName": "On-Black Grey",
+        "canonical": "#a9b1ad",
+        "tonalRamp": [
+          "oklch(15% 0.011 164.8)",
+          "oklch(26% 0.011 164.8)",
+          "oklch(38% 0.011 164.8)",
+          "oklch(49% 0.011 164.8)",
+          "oklch(61% 0.011 164.8)",
+          "oklch(72% 0.011 164.8)",
+          "oklch(84% 0.011 164.8)",
+          "oklch(95% 0.011 164.8)"
+        ]
+      },
+      "book": {
+        "role": "primary",
+        "displayName": "Bottle Green",
+        "canonical": "#0f6b52",
+        "tonalRamp": [
+          "oklch(15% 0.090 168.7)",
+          "oklch(26% 0.090 168.7)",
+          "oklch(38% 0.090 168.7)",
+          "oklch(49% 0.090 168.7)",
+          "oklch(61% 0.090 168.7)",
+          "oklch(72% 0.090 168.7)",
+          "oklch(84% 0.090 168.7)",
+          "oklch(95% 0.090 168.7)"
+        ]
+      },
+      "book-hi": {
+        "role": "primary",
+        "displayName": "Deep Bottle Green",
+        "canonical": "#0b5441",
+        "tonalRamp": [
+          "oklch(15% 0.075 169.9)",
+          "oklch(26% 0.075 169.9)",
+          "oklch(38% 0.075 169.9)",
+          "oklch(49% 0.075 169.9)",
+          "oklch(61% 0.075 169.9)",
+          "oklch(72% 0.075 169.9)",
+          "oklch(84% 0.075 169.9)",
+          "oklch(95% 0.075 169.9)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(38% 0.000 89.9)",
+          "oklch(49% 0.000 89.9)",
+          "oklch(61% 0.000 89.9)",
+          "oklch(72% 0.000 89.9)",
+          "oklch(84% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The page H1; homepage lines held with nowrap."
+      },
+      "display-sub": {
+        "displayName": "Display Sub",
+        "purpose": "Subpage H1 and the contact address."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Every section H2; On-Black inside black bands."
+      },
+      "numeral": {
+        "displayName": "Stage Numeral",
+        "purpose": "Exam and process stage numbers only. Source uses font-stretch: 75%."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Review count, rating, prices, measurements. Source uses font-stretch: 87.5%."
+      },
+      "list-large": {
+        "displayName": "List Large",
+        "purpose": "The slash-separated brand list."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Patient review text."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Visit card heading and small component titles."
+      },
+      "row": {
+        "displayName": "Row",
+        "purpose": "Service name in the price table."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Paragraph under a Display heading, Measured Grey."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text, 18px / 1.6."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Stage descriptions, buttons, notes."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "Heading of related-link sections. Source uses font-stretch: 87.5%."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase nav, definition terms, the who column, attributions. Source uses font-stretch: 75%."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 30px 60px rgba(11, 13, 12, .18), 0 2px 6px rgba(11, 13, 12, .08)",
+        "purpose": "Visit card over the hero photo."
+      },
+      {
+        "name": "panel-drop",
+        "value": "0 24px 48px rgba(11, 13, 12, .12)",
+        "purpose": "Navigation dropdown panel."
+      },
+      {
+        "name": "preview-drop",
+        "value": "0 20px 40px rgba(11, 13, 12, .25)",
+        "purpose": "Pointer-following photo preview."
+      },
+      {
+        "name": "button-float",
+        "value": "0 12px 28px rgba(11, 13, 12, .3)",
+        "purpose": "Floating phone button."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "System easing for every transition."
+      },
+      {
+        "name": "duration-fill",
+        "value": "0.2s",
+        "purpose": "Button fill change."
+      },
+      {
+        "name": "duration-toggle",
+        "value": "0.25s",
+        "purpose": "Chevron flip, FAQ plus rotation, preview fade."
+      },
+      {
+        "name": "duration-row",
+        "value": "0.3s",
+        "purpose": "Price-row name slide (8px) and arrow nudge (4px)."
+      },
+      {
+        "name": "preview-follow",
+        "value": "lerp 0.2 per frame, 24px offset",
+        "purpose": "Pointer preview trailing; off for touch and reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "760px"
+      },
+      {
+        "name": "visit-compact",
+        "value": "761px to 1400px"
+      },
+      {
+        "name": "tablet",
+        "value": "1100px"
+      },
+      {
+        "name": "desktop-nav",
+        "value": "1101px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Book / Call Button",
+      "kind": "button",
+      "refersTo": "button-book",
+      "description": "The only filled action: booking or calling.",
+      "html": "<a class=\"ds-btn-book\" href=\"#\">Umów wizytę</a>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-btn-book{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:2px;background:var(--book);color:var(--white);font-weight:600;font-size:1rem;text-decoration:none;transition:background-color .2s var(--ease);} .ds-btn-book:hover{background:var(--book-hi);} .ds-btn-book:focus-visible{outline:2px solid var(--book);outline-offset:3px;}"
+    },
+    {
+      "name": "Text Link Action",
+      "kind": "button",
+      "refersTo": "button-book",
+      "description": "Secondary action set beside the green button.",
+      "html": "<a class=\"ds-link\" href=\"#\">lub zadzwoń: 42 630 28 30</a>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-link{font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;} .ds-link:hover{color:var(--book);} .ds-link:focus-visible{outline:2px solid var(--book);outline-offset:3px;}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Sticky white header: uppercase condensed links, dropdown trigger with drawn chevron, phone, green booking button.",
+      "html": "<header class=\"ds-top\"><strong class=\"ds-logo\">OPTYK</strong><nav><button class=\"ds-nav-trigger\" aria-expanded=\"false\">Badania</button><a class=\"ds-nav-link\" href=\"#\">Zespół</a><a class=\"ds-nav-link\" href=\"#\">Kontakt</a></nav><a class=\"ds-phone\" href=\"#\">42 630 28 30</a><a class=\"ds-btn-book\" href=\"#\">Umów wizytę</a></header>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-top{display:flex;align-items:center;gap:28px;height:76px;padding:0 24px;background:var(--white);border-bottom:1px solid var(--rule);} .ds-top nav{display:flex;gap:30px;margin-left:auto;} .ds-nav-link,.ds-nav-trigger{display:inline-flex;align-items:center;gap:6px;padding:10px 0;border:0;background:none;color:var(--ink);text-decoration:none;cursor:pointer;font-family:inherit;font-stretch:75%;text-transform:uppercase;letter-spacing:.09em;font-size:.8125rem;font-weight:600;} .ds-nav-trigger::after{content:'';width:7px;height:7px;margin-top:-3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .25s var(--ease);} .ds-nav-trigger[aria-expanded=true]::after{transform:rotate(-135deg);margin-top:3px;} .ds-nav-link:hover,.ds-nav-trigger:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:8px;} .ds-phone{font-weight:600;text-decoration:none;color:var(--ink);} .ds-btn-book{display:inline-flex;align-items:center;min-height:44px;padding:0 26px;border-radius:2px;background:var(--book);color:var(--white);font-weight:600;text-decoration:none;} .ds-btn-book:hover{background:var(--book-hi);}"
+    },
+    {
+      "name": "Visit Card",
+      "kind": "card",
+      "refersTo": "visit-card",
+      "description": "White index card over the hero photo: ruled visit types with prices and the green call button.",
+      "html": "<aside class=\"ds-visit\"><h2>Umów wizytę</h2><ul><li><a href=\"#\"><span>Badanie wzroku</span><span class=\"ds-price\">100 zł</span></a></li><li><a href=\"#\"><span>Wizyta okulistyczna</span><span class=\"ds-price\">200 zł</span></a></li></ul><a class=\"ds-btn-book\" href=\"#\">Zadzwoń: 42 630 28 30</a></aside>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-visit{width:420px;padding:28px 28px 22px;background:var(--white);box-shadow:0 30px 60px rgba(11,13,12,.18),0 2px 6px rgba(11,13,12,.08);} .ds-visit h2{margin:0 0 8px;font-size:1.375rem;font-weight:500;letter-spacing:-.01em;} .ds-visit ul{margin:0 0 20px;padding:0;list-style:none;border-top:2px solid var(--ink);} .ds-visit li a{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink);} .ds-visit li a::after{content:'';flex:none;align-self:center;width:16px;height:16px;background:var(--ink-2);mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 4l4 4-4 4' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\") center / contain no-repeat;} .ds-visit li a:hover span:first-child{color:var(--book);} .ds-visit li a:hover::after{background:var(--book);} .ds-price{margin-left:auto;color:var(--ink-2);font-variant-numeric:tabular-nums;} .ds-btn-book{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:2px;background:var(--book);color:var(--white);font-weight:600;text-decoration:none;} .ds-btn-book:hover{background:var(--book-hi);}"
+    },
+    {
+      "name": "Price Table",
+      "kind": "custom",
+      "refersTo": "price-row",
+      "description": "The services ledger: name, who, tabular price, arrow; row slides and turns green on hover.",
+      "html": "<ul class=\"ds-table\"><li><a href=\"#\"><span class=\"ds-name\">Badanie wzroku</span><span class=\"ds-who\">optometrystka</span><span class=\"ds-pr\">100 zł</span></a></li><li><a href=\"#\"><span class=\"ds-name\">Wizyta okulistyczna</span><span class=\"ds-who\">okulistka</span><span class=\"ds-pr\">200 zł <small>sob. 250 zł</small></span></a></li></ul>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-table{margin:0;padding:0;list-style:none;border-top:2px solid var(--ink);} .ds-table a{display:grid;grid-template-columns:minmax(0,1fr) 150px 110px 24px;align-items:baseline;gap:16px;padding:22px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink);} .ds-table a::after{content:'';justify-self:end;align-self:center;width:18px;height:18px;background:var(--ink-2);mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 4l4 4-4 4' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\") center / contain no-repeat;transition:transform .3s var(--ease),background-color .3s;} .ds-name{font-size:1.25rem;transition:transform .3s var(--ease);} .ds-who{color:var(--ink-2);font-stretch:75%;text-transform:uppercase;letter-spacing:.09em;font-size:.8125rem;font-weight:600;} .ds-pr{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;} .ds-pr small{display:block;font-size:.8125rem;color:var(--ink-2);} .ds-table a:hover .ds-name{transform:translateX(8px);color:var(--book);} .ds-table a:hover::after{background:var(--book);transform:translateX(4px);} .ds-table a:focus-visible{outline:2px solid var(--book);outline-offset:3px;}"
+    },
+    {
+      "name": "Instrument Band",
+      "kind": "custom",
+      "refersTo": "instrument-band",
+      "description": "Studio-black band with edge-faded instrument photos, names and grey descriptions.",
+      "html": "<section class=\"ds-band\"><h2>Sprzęt, na którym badamy</h2><div class=\"ds-item\"><div class=\"ds-photo\"></div><h3>Foropter</h3><p>Porównujesz szkła jedno po drugim.</p></div></section>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-band{padding:56px 32px;background:var(--photo-black);color:var(--on-black);} .ds-band h2{margin:0 0 40px;font-weight:300;font-size:2.5rem;line-height:1.05;letter-spacing:-.025em;} .ds-item{max-width:280px;} .ds-photo{aspect-ratio:4/5;background:radial-gradient(circle at 50% 45%,#3a3f3c,#010101 70%);margin-bottom:20px;} .ds-band h3{margin:0 0 6px;font-size:1.25rem;font-weight:500;} .ds-band p{margin:0;color:var(--on-black-2);}"
+    },
+    {
+      "name": "Stages",
+      "kind": "custom",
+      "refersTo": "stages",
+      "description": "Ordered steps with huge light condensed numerals between hairline columns.",
+      "html": "<ol class=\"ds-stages\"><li><span class=\"ds-no\">1</span><h3>Rozmowa</h3><p>Jak pracujesz, co Ci przeszkadza.</p></li><li><span class=\"ds-no\">2</span><h3>Pomiar</h3><p>Autorefraktometr mierzy wadę.</p></li><li><span class=\"ds-no\">3</span><h3>Dal i bliż</h3><p>Porównujesz szkła.</p></li></ol>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-stages{display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:0;list-style:none;border-top:1px solid var(--ink);} .ds-stages li{padding:20px 24px 0 0;} .ds-stages li+li{padding-left:24px;border-left:1px solid var(--rule);} .ds-no{display:block;font-size:6rem;line-height:.85;font-weight:200;font-stretch:75%;letter-spacing:-.04em;font-variant-numeric:tabular-nums;} .ds-stages h3{margin:24px 0 8px;font-size:1.125rem;font-weight:600;} .ds-stages p{margin:0;color:var(--ink-2);font-size:1rem;}"
+    },
+    {
+      "name": "Figures",
+      "kind": "custom",
+      "refersTo": "figures",
+      "description": "Real numbers set large and tabular between an ink rule and a hairline.",
+      "html": "<dl class=\"ds-figures\"><div><dt>223</dt><dd>opinie na ZnanyLekarz</dd></div><div><dt>5,0</dt><dd>średnia ocen</dd></div><div><dt>200 zł</dt><dd>wizyta</dd></div></dl>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-figures{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 48px;margin:0;padding:24px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);} .ds-figures dt{font-size:3.25rem;font-weight:300;line-height:1;letter-spacing:-.03em;font-stretch:87.5%;font-variant-numeric:tabular-nums;white-space:nowrap;} .ds-figures dd{margin:8px 0 0;color:var(--ink-2);font-size:.9375rem;}"
+    },
+    {
+      "name": "FAQ",
+      "kind": "custom",
+      "refersTo": "faq",
+      "description": "Native disclosure rows with a drawn plus that turns to a cross.",
+      "html": "<div class=\"ds-faq\"><details><summary>Czy badanie boli?</summary><p>Nie. Badanie jest bezdotykowe.</p></details><details><summary>Ile trwa badanie?</summary><p>Około 10 minut.</p></details></div>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-faq{border-top:2px solid var(--ink);} .ds-faq details{border-bottom:1px solid var(--rule);} .ds-faq summary{display:flex;justify-content:space-between;gap:16px;padding:22px 0;font-size:1.125rem;font-weight:500;cursor:pointer;list-style:none;} .ds-faq summary::-webkit-details-marker{display:none;} .ds-faq summary::after{content:'';flex:none;width:18px;height:18px;background:var(--ink);mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 2v12M2 8h12' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E\") center / contain no-repeat;transition:transform .25s var(--ease);} .ds-faq details[open] summary::after{transform:rotate(45deg);} .ds-faq summary:focus-visible{outline:2px solid var(--book);outline-offset:3px;} .ds-faq p{margin:0 0 24px;color:var(--ink-2);}"
+    },
+    {
+      "name": "Floating Phone",
+      "kind": "button",
+      "refersTo": "float-call",
+      "description": "Fixed ink circle with a line handset; one-tap call on every page.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Zadzwoń\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 5.5 5.5a2 2 0 0 1 2-2z\"/></svg></a>",
+      "css": ":host{--ink:#111412;--ink-2:#545b57;--mist:#f2f3f1;--rule:#d9dcda;--black:#0b0d0c;--photo-black:#010101;--on-black:#f4f5f4;--on-black-2:#a9b1ad;--book:#0f6b52;--book-hi:#0b5441;--white:#fff;--ease:cubic-bezier(.16,1,.3,1);font-family:Archivo,Arial,sans-serif;color:var(--ink);} .ds-float{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--ink);color:var(--white);box-shadow:0 12px 28px rgba(11,13,12,.3);} .ds-float svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round;} .ds-float:focus-visible{outline:2px solid var(--book);outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Instrument Ledger",
+    "overview": "**Creative North Star: \"The Instrument Ledger\"**\n\nThe practice presents itself the way it measures: precisely. Pages are near-white sheets held on a strict grid, with information set in ruled rows like a ledger (service, who performs it, price) and figures set large in light, tabular numerals. Against that paper, the equipment is shown as an object of value: foropter, slit lamp and GDx scanner photographed on a black studio backdrop and placed in a band of the same black, so the photos have no visible frame.\n\nDensity is calm and generous. Sections breathe on a fluid rhythm of 80 to 152px, type is light at large sizes and condensed at small ones, and colour is almost absent: ink, grey, mist, hairline, black. The single chromatic note is bottle green, and it marks the action of booking or calling. Depth is flat; only layers that genuinely float (visit card, dropdown, pointer preview, phone button) cast a shadow.\n\nThe world refuses rounded-blob pastel clinic templates and the navy-and-gold palette of the client's reference site; it keeps that site's solutions (dropdown menu, person in glasses in the first viewport, exam as numbered stages, real figures, floating phone) and re-dresses them in this ledger language.",
+    "keyCharacteristics": [
+      "Ruled rows, not cards: information sits between a heavy ink top rule and hairline row dividers.",
+      "One typeface, Archivo variable, used across its width axis: normal width for reading, 87.5% for figures and subheads, 75% for labels and stage numerals.",
+      "Light weights (200 to 300) at display sizes, 600 only at label and action sizes.",
+      "Black bands for instruments, closing calls and footer; mist bands for quiet sections; white everywhere else.",
+      "Bottle green appears as a fill only on booking and call buttons.",
+      "Square corners everywhere except the 2px button corner and the circular floating phone."
+    ],
+    "rules": [
+      {
+        "name": "The Single Green Rule",
+        "body": "Bottle green is the only chroma in the system and the only button fill that means \"act\". If a surface has two green fills that do different things, one of them is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Blacks Rule",
+        "body": "Instrument photography sits on Studio Black (#010101) to dissolve the photo edge; every other dark surface uses Salon Black. Do not swap them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Light Large Rule",
+        "body": "The larger the type, the lighter the weight: 200 to 300 at 26px and above, 400 for reading, 500 to 600 only at 22px and below.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every number that can be compared (prices, figures, stage numerals, dropdown prices) is set with tabular figures and aligned in its column.",
+        "section": "typography"
+      },
+      {
+        "name": "The Width-Axis Rule",
+        "body": "Hierarchy at small sizes comes from width and case (75% uppercase), not from extra colour or size steps.",
+        "section": "typography"
+      },
+      {
+        "name": "The Floating-Only Rule",
+        "body": "A shadow means the element sits over other content. Anything in the flow of the page (rows, figures, images, sections) stays flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** put lists of services, visit types, facts and questions in ruled rows under an ink top rule, with prices tabular and right-aligned.",
+      "**Do** keep Bottle Green as the only fill colour for actions, and use it for booking or calling only.",
+      "**Do** set display and figure type light (200 to 300) and large; use the 75% width uppercase Label for small structural text.",
+      "**Do** place instrument and object photography on Studio Black with the edge-fade mask so no photo reads as a rectangle.",
+      "**Do** end every page with a clear call: closing band or contact block, plus the floating phone.",
+      "**Do** mark every illustrative or rights-unconfirmed photo with the photo badge or a band note until it is replaced."
+    ],
+    "donts": [
+      "**Don't** round corners beyond the 2px button corner (the floating phone circle is the one exception), and don't use pill buttons or organic blob shapes.",
+      "**Don't** add a second accent colour or reintroduce navy and gold.",
+      "**Don't** put services in cards or tiles; the ruled table is the service pattern on every page.",
+      "**Don't** number anything that is not an ordered sequence; numerals belong to the Stages pattern only.",
+      "**Don't** add shadows to elements that sit in the page flow."
+    ]
+  }
+}
